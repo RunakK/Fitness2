@@ -6,3 +6,40 @@
   font-display: swap;
   src: url("../fonts/.woff2") format("woff2");
 }
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../../fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../../fonts/roboto-condensed-v25-cyrillic_latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Alumni Sans";
+
+  font-display: swap;
+  src: url("../../fonts/alumni-sans-v16-cyrillic_latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Alumni Sans";
+
+  font-display: swap;
+  src: url("../../fonts/alumni-sans-v16-cyrillic_latin-700.woff2") format("woff2");
+}
