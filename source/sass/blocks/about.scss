@@ -1,0 +1,48 @@
+.about__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  display: grid;
+  grid-template-columns: 1fr 660px;
+  column-gap: 85px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.about__video {
+  grid-column: span 2;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+
+  @include vp-1199 {
+    grid-column: span 1;
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    transform: translate(0);
+    width: 100%;
+    height: 167px;
+  }
+}
+
+.about__gym-description {
+  & p:nth-child(2) {
+    display: block;
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
