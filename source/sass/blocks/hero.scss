@@ -1,0 +1,169 @@
+.hero {
+  // background: $blue-red-conic;
+  color: $color-secondary;
+  padding-top: 73px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../img/backgound-hero.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% + 73px);
+    top: -73px;
+    background-position-y: 70px;
+
+    @include vp-1199 {
+      background-image: url(../../img/backgound-hero-tablet.png);
+    }
+
+    @include vp-767 {
+      background-image: url(../../img/backgound-hero-mobile.png);
+    }
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: repeat(3, min-content);
+  margin-left: auto;
+  padding-left: 34px;
+  padding-bottom: 93px;
+
+  @include vp-1199 {
+    padding-left: 16px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 183px 324px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: auto 1fr;
+    padding-left: 0;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  left: 460px;
+  top: -22px;
+
+  @include vp-1199 {
+    position: relative;
+    grid-column: 3;
+    top: 9px;
+    left: 354px;
+    grid-row: 1/-1;
+    left: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__img img {
+  @include vp-1199 {
+    width: 324px;
+  }
+}
+
+.hero__city {
+  font-family: $ff-AlumniSans;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  grid-column: 2;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: right;
+  padding-right: 50px;
+  margin-top: 106px;
+
+  @include vp-1199 {
+    font-size: 34px;
+    letter-spacing: 1.02px;
+    margin-top: 67px;
+    margin-bottom: 13px;
+    padding-right: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-right: 0px;
+  }
+}
+
+.hero__heading {
+  text-align: right;
+  font-family: $ff-AlumniSans;
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: 4.6px;
+  grid-column: 2;
+  line-height: normal;
+  margin: 0;
+  margin-left: 17px;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    font-size: 72px;
+    letter-spacing: 3.6px;
+    margin-left: -10px;
+    text-align: right;
+    text-transform: lowercase;
+
+  }
+
+  @include vp-767 {}
+
+}
+
+.hero__description {
+  text-align: right;
+  font-family: $ff-RobotoCondensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  align-self: end;
+  padding-bottom: 36px;
+  margin-left: -15px;
+
+  @include vp-1199 {
+    padding-bottom: 20px;
+    width: 113px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: 76px;
+    left: 15px;
+  }
+}
+
+.hero__button {
+  grid-column: 2;
+  padding: 20px 10px;
+  margin-top: 48px;
+  width: 233px;
+  justify-self: end;
+
+  @include vp-1199 {
+    width: 100%;
+    margin-top: 37px;
+  }
+
+  @include vp-767 {
+    margin-top: 19px;
+    width: 100%;
+    grid-column: 1/-1;
+  }
+}
