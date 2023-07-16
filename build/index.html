@@ -34,9 +34,9 @@
       <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
-            <p class="hero__city">омск</p>
-            <h1 class="hero__heading">ФИТНЕС<br>ЦЕНТР</h1>
-            <p class="hero__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </p>
+            <p>омск</p>
+            <h1>ФИТНЕС<br>ЦЕНТР</h1>
+            <span>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </span>
             <button class="btn hero__button">Купить абонемент</button>
             <picture class="hero__img">
               <source type="image/webp" media="(max-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
@@ -51,11 +51,11 @@
       <section class="about">
         <div class="about__wrapper">
           <div class="about__description">
-            <h2 class="about__heading heading">Тренажерный зал</h2>
-            <p class="about__description">Просторный зал площадью 900 кв/м</p>
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
             <div class="about__gym-description">
-              <p class="about__first-description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p class="about__second-description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
             </div>
           </div>
           <div class="about__picture">
@@ -72,6 +72,118 @@
           <iframe class="about__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
+      <section class="tabs">
+        <div class="container">
+          <h2>Абонементы</h2>
+          <div class="tabs__wrapper" data-tabs="parent">
+            <div class="tabs__select-list" data-tabs="controls">
+              <button class="tabs__select-card is-active" type="button" data-index="1" data-tabs="control">1 месяц</button>
+              <button class="tabs__select-card" type="button" data-index="2" data-tabs="control">6 месяцев</button>
+              <button class="tabs__select-card" type="button" data-index="3" data-tabs="control">12 месяцев</button>
+            </div>
+            <div class="tabs__content" data-tabs="content">
+              <ul class="tabs__card-list for-load" data-tabs="element">
+                <li class="tabs__card card">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div>
+                    <span>5000 ₽</span>
+                    <span>5000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+                <li class="tabs__card card card--is-active">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <div>
+                    <span>1700 ₽</span>
+                    <span>1700</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+                <li class="tabs__card card">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <div>
+                    <span>2700 ₽</span>
+                    <span>2700</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+              </ul>
+              <ul class="tabs__card-list" data-tabs="element">
+                <li class="tabs__card card">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div>
+                    <span>25000 ₽</span>
+                    <span>25000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+                <li class="tabs__card card card--is-active">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <div>
+                    <span>8000 ₽</span>
+                    <span>8000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+                <li class="tabs__card card">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <div>
+                    <span>12000 ₽</span>
+                    <span>12000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+              </ul>
+              <ul class="tabs__card-list" data-tabs="element">
+                <li class="tabs__card card">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div>
+                    <span>40000 ₽</span>
+                    <span>40000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+                <li class="tabs__card card card--is-active">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <div>
+                    <span>30000 ₽</span>
+                    <span>30000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+                <li class="tabs__card card">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <div>
+                    <span>20000 ₽</span>
+                    <span>20000</span>
+                  </div>
+                  <button class="btn btn--dark">купить абонемент</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__wrapper">
+            <div class="promo__text promo-text">
+
+            </div>
+            <div class="promo__image"></div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer class="footer">
       <div class="container">
@@ -79,22 +191,22 @@
           <a class="footer__logo-link" href="">supergym</a>
           <nav class="footer__navigation navigation">
             <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="#">Услуги</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Абонементы</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Акции</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Тренеры</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Расписание</a></li>
+              <li class="navigation__card"><a class="navigation__link" href="#">Услуги</a></li>
+              <li class="navigation__card"><a class="navigation__link" href="#">Абонементы</a></li>
+              <li class="navigation__card"><a class="navigation__link" href="#">Акции</a></li>
+              <li class="navigation__card"><a class="navigation__link" href="#">Тренеры</a></li>
+              <li class="navigation__card"><a class="navigation__link" href="#">Расписание</a></li>
             </ul>
           </nav>
           <ul class="footer__social social">
-            <li class="social__item"><a class="social__link" href="">
+            <li class="social__card"><a class="social__link" href="">
                 <span class="visually-hidden">мы вконтакте</span>
                 <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__card">
               <a class="social__link" href="">
                 <span class="visually-hidden">мы в одноклассниках</span>
                 <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +214,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item"><a class="social__link" href="">
+            <li class="social__card"><a class="social__link" href="">
                 <span class="visually-hidden">мы на реддит</span>
                 <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#Reddit"></use>

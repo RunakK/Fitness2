@@ -1,5 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import './modules/tabs/init-tabs';
+import './modules/tabs/tabs';
+import './modules/tabs/index';
+
 
 // ---------------------------------
 

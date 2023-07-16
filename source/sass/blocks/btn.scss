@@ -31,12 +31,21 @@
   }
 
   &--dark {
-    border: 2px solid $color-primary;
+    outline: 2px solid $color-primary;
+    outline-offset: -2px;
+    border: none;
     color: $color-primary;
+    padding: 27px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: transparent;
 
     &:hover,
     &:focus {
-      border: none;
+      outline: none;
       color: $color-secondary;
       background: $red-blue-to-right;
     }

@@ -1,8 +1,11 @@
 .hero {
-  // background: $blue-red-conic;
   color: $color-secondary;
   padding-top: 73px;
   position: relative;
+
+  @include vp-1199 {
+    padding-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -37,11 +40,13 @@
     padding-left: 16px;
     column-gap: 30px;
     grid-template-columns: 1fr 183px 324px;
+    padding-bottom: 91px;
   }
 
   @include vp-767 {
     grid-template-columns: auto 1fr;
     padding-left: 0;
+    padding-bottom: 79px;
   }
 }
 
@@ -67,10 +72,11 @@
 .hero__img img {
   @include vp-1199 {
     width: 324px;
+    height: 390px;
   }
 }
 
-.hero__city {
+.hero__wrapper p:first-child {
   font-family: $ff-AlumniSans;
   font-size: 48px;
   font-weight: 600;
@@ -86,7 +92,7 @@
     font-size: 34px;
     letter-spacing: 1.02px;
     margin-top: 67px;
-    margin-bottom: 13px;
+    margin-bottom: -7px;
     padding-right: 5px;
   }
 
@@ -99,7 +105,7 @@
   }
 }
 
-.hero__heading {
+.hero__wrapper h1 {
   text-align: right;
   font-family: $ff-AlumniSans;
   font-size: 92px;
@@ -124,7 +130,7 @@
 
 }
 
-.hero__description {
+.hero__wrapper span {
   text-align: right;
   font-family: $ff-RobotoCondensed;
   font-size: 14px;
@@ -138,7 +144,7 @@
   margin-left: -15px;
 
   @include vp-1199 {
-    padding-bottom: 20px;
+    padding-bottom: 47px;
     width: 113px;
   }
 
@@ -159,6 +165,8 @@
   @include vp-1199 {
     width: 100%;
     margin-top: 37px;
+    align-self: center;
+    margin: 0;
   }
 
   @include vp-767 {
