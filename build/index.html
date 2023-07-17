@@ -62,10 +62,10 @@
             <picture>
               <source type="image/webp" media="(max-width: 1366px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 319px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
               <source media="(max-width: 1366px)" srcset="img/gym-desktop.png 1x, img/gym-desktop@2x.png 2x">
               <source media="(max-width: 1199px)" srcset="img/gym-tablet.png 1x, img/gym-tablet@2x.png 2x">
-              <source media="(max-width: 319px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
               <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401">
             </picture>
           </div>
@@ -86,7 +86,7 @@
                 <li class="tabs__card card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <div>
+                  <div class="card__price">
                     <span>5000 ₽</span>
                     <span>5000</span>
                   </div>
@@ -95,7 +95,7 @@
                 <li class="tabs__card card card--is-active">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
-                  <div>
+                  <div class="card__price">
                     <span>1700 ₽</span>
                     <span>1700</span>
                   </div>
@@ -104,7 +104,7 @@
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
-                  <div>
+                  <div class="card__price">
                     <span>2700 ₽</span>
                     <span>2700</span>
                   </div>
@@ -115,7 +115,7 @@
                 <li class="tabs__card card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <div>
+                  <div class="card__price">
                     <span>25000 ₽</span>
                     <span>25000</span>
                   </div>
@@ -124,7 +124,7 @@
                 <li class="tabs__card card card--is-active">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
-                  <div>
+                  <div class="card__price">
                     <span>8000 ₽</span>
                     <span>8000</span>
                   </div>
@@ -133,7 +133,7 @@
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
-                  <div>
+                  <div class="card__price">
                     <span>12000 ₽</span>
                     <span>12000</span>
                   </div>
@@ -144,7 +144,7 @@
                 <li class="tabs__card card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <div>
+                  <div class="card__price">
                     <span>40000 ₽</span>
                     <span>40000</span>
                   </div>
@@ -153,7 +153,7 @@
                 <li class="tabs__card card card--is-active">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
-                  <div>
+                  <div class="card__price">
                     <span>30000 ₽</span>
                     <span>30000</span>
                   </div>
@@ -162,7 +162,7 @@
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
-                  <div>
+                  <div class="card__price">
                     <span>20000 ₽</span>
                     <span>20000</span>
                   </div>
@@ -173,13 +173,32 @@
           </div>
         </div>
       </section>
-      <section class="promo">
+      <section class="event">
         <div class="container">
-          <div class="promo__wrapper">
-            <div class="promo__text promo-text">
-
+          <div class="event__wrapper">
+            <div class="event__text event-text">
+              <h2>Ежегодные соревнования по CrossFit</h2>
+              <p>SUPER<br>GAMES</p>
+              <div class="event-text__date">
+                <h3>Дата</h3>
+                <p>
+                  <span>7</span>
+                  Марта<br>2019</p>
+              </div>
+              <div class="event-text__time">
+                <h3>Время</h3> <span>12:00</span>
+              </div>
+              <button class="event-text__button btn">заполнить заявку</button>
             </div>
-            <div class="promo__image"></div>
+            <picture>
+              <source type="image/webp" media="(max-width: 1366px)" srcset="img/super-games.webp 1x, img/super-games@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/super-games-tablet.webp 1x, img/super-games-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/super-games-mobile.webp 1x, img/super-games-mobile@2x.webp 2x">
+              <source media="(max-width: 1366px)" srcset="img/super-games.png 1x, img/super-games@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="img/super-games-tablet.png 1x, img/super-games-tablet@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="img/super-games-mobile.png 1x, img/super-games-mobile@2x.png 2x">
+              <img src="./img/super-games.png"  srcset="./img/super-games@2x.png 2x" width="660" height="500">
+            </picture>
           </div>
         </div>
       </section>

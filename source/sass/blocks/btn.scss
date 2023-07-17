@@ -45,7 +45,7 @@
 
     &:hover,
     &:focus {
-      outline: none;
+      outline-color: inherit;
       color: $color-secondary;
       background: $red-blue-to-right;
     }
