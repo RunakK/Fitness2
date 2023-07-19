@@ -1,10 +1,8 @@
-
-
-
 .tabs {
   background-color: $background-secondary;
   position: relative;
-  padding: 120px 0;
+  padding: 118px 0;
+
   &::before {
     content: "";
     position: absolute;
@@ -14,6 +12,23 @@
     right: 0;
     bottom: -149px;
     z-index: 1;
+  }
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 103px;
+
+    &::before {
+      bottom: -103px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -25,6 +40,11 @@
 .tabs h2 {
   @include heading;
   text-align: center;
+  margin-bottom: 17px;
+
+  @include vp-767 {
+    margin-bottom: 23px;
+  }
 }
 
 .tabs__select-card {
@@ -54,19 +74,21 @@
   flex-wrap: wrap;
   align-self: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.20);
-  padding-bottom: 20px;
-  margin-bottom: 39px;
-  width: 31%;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  width: 30%;
   justify-content: space-between;
   box-sizing: border-box;
 
   @include vp-1199 {
     width: 43.2vw;
     gap: 1vw;
+    margin-bottom: 45px;
   }
 
   @include vp-767 {
-    width: calc(100% - 15px);
+    width: 100%;
+    margin-bottom: 33px;
   }
 }
 
@@ -91,13 +113,14 @@
   @include vp-1199 {
     display: flex;
     flex-direction: column;
-    width: 57.5%;
+    width: 57.5vw;
     align-self: center;
     gap: 5.2vw;
   }
 
   @include vp-767 {
     width: 90.6vw;
+    gap: 11.6vw;
   }
 }
 
@@ -110,7 +133,7 @@
     width: 100%;
     height: 2px;
     background-color: #D10A42;
-    bottom: -22px;
+    bottom: -13px;
   }
 }
 

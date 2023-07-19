@@ -144,14 +144,12 @@
   line-height: normal;
   margin: 0;
 
-  @include vp-1199 {}
-
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     font-size: 32px;
     letter-spacing: 0.96px;
   }
