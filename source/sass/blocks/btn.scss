@@ -21,13 +21,17 @@
 
   &:hover,
   &:focus {
-    border: none;
+    background-color: $color-secondary;
     color: $color-secondary-accent;
   }
 
   &:active {
-    border: none;
+    border-color: transparent;
     color: $color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 
   &--dark {

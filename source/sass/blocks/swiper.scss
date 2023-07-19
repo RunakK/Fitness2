@@ -1,0 +1,101 @@
+.swiper {
+  @include vp-1199 {
+    width: 556px;
+  }
+}
+
+.swiper__wrapper {
+  height: 294px;
+  box-sizing: border-box;
+
+  @include vp-767 {
+    height: 274px;
+  }
+}
+
+
+.swiper__button-prev {
+  position: relative;
+  height: 714px;
+  width: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  color: red;
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    background-color: $color-secondary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    background: url("../../img/svg/arrow-prew.svg") no-repeat center;
+    color: $primary-color;
+  }
+
+  @include vp-1199 {
+    width: 80px;
+
+    &::after {
+      top: 223px;
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+
+.swiper-button-next {
+  height: 714px;
+  width: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    background-color: $color-secondary;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    background: url("../../img/svg/arrow-next.svg") no-repeat center;
+    color: red;
+  }
+
+  @include vp-1199 {
+    width: 80px;
+
+    &::after {
+      top: 223px;
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

@@ -8,13 +8,14 @@
   padding-top: 6vw;
   padding-left: 5.6vw;
   padding-right: 5.6vw;
-  padding-bottom: 6.5vw;
+  padding-bottom: 5.5vw;
   width: calc(48.3vw - 12vw);
   box-sizing: border-box;
 
 
   @include vp-1199 {
     width: 38vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   @include vp-767 {
@@ -158,6 +159,9 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    height: 39px;
+    align-items: center;
+    justify-content: center;
   }
 
   @include vp-767 {
