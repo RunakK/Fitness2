@@ -69,7 +69,7 @@
               <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401">
             </picture>
           </div>
-          <iframe class="about__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- <iframe class="about__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
       </section>
       <section class="tabs">
@@ -77,7 +77,7 @@
           <h2>Абонементы</h2>
           <div class="tabs__wrapper" data-tabs="parent">
             <div class="tabs__select-list" data-tabs="controls">
-              <button class="tabs__select-card is-active" type="button" data-index="1" data-tabs="control">1 месяц</button>
+              <button class="tabs__select-card" type="button" data-index="1" data-tabs="control">1 месяц</button>
               <button class="tabs__select-card" type="button" data-index="2" data-tabs="control">6 месяцев</button>
               <button class="tabs__select-card" type="button" data-index="3" data-tabs="control">12 месяцев</button>
             </div>
@@ -90,16 +90,16 @@
                     <span>5000 ₽</span>
                     <span>5000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
-                <li class="tabs__card card card--is-active">
+                <li class="tabs__card card">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <div class="card__price">
                     <span>1700 ₽</span>
                     <span>1700</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -108,7 +108,7 @@
                     <span>2700 ₽</span>
                     <span>2700</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__card-list" data-tabs="element">
@@ -119,16 +119,16 @@
                     <span>25000 ₽</span>
                     <span>25000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
-                <li class="tabs__card card card--is-active">
+                <li class="tabs__card card">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <div class="card__price">
                     <span>8000 ₽</span>
                     <span>8000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -137,7 +137,7 @@
                     <span>12000 ₽</span>
                     <span>12000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__card-list" data-tabs="element">
@@ -148,16 +148,16 @@
                     <span>40000 ₽</span>
                     <span>40000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
-                <li class="tabs__card card card--is-active">
+                <li class="tabs__card card">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <div class="card__price">
                     <span>30000 ₽</span>
                     <span>30000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -166,7 +166,7 @@
                     <span>20000 ₽</span>
                     <span>20000</span>
                   </div>
-                  <button class="btn btn--dark">купить абонемент</button>
+                  <a class="btn btn--dark card__button">купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -218,15 +218,15 @@
                   <source type="image/webp" srcset="img/trainer_1.webp 1x, img/trainer_1@2x.webp 2x">
                   <img src="./img/trainer_1.png" srcset="./img/trainer_1@2x.png 2x" width="260" height="294">
                 </picture>
-                  <div class="swiper-slide__info">
-                    <h3>Анна Павлова</h3>
-                    <span>CrossFit</span>
-                    <ul class="swiper-slide__achievements-list">
-                      <li class="swiper-slide__achievements-item">Certified Level 5 Trainer</li>
-                      <li class="swiper-slide__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
-                      <li class="swiper-slide__achievements-item">Опыт — 20 лет</li>
-                    </ul>
-                  </div>
+                <div class="swiper-slide__info">
+                  <h3>Анна Павлова</h3>
+                  <span>CrossFit</span>
+                  <ul class="swiper-slide__achievements-list">
+                    <li class="swiper-slide__achievements-item">Certified Level 5 Trainer</li>
+                    <li class="swiper-slide__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="swiper-slide__achievements-item">Опыт — 20 лет</li>
+                  </ul>
+                </div>
               </div>
 
               <div class="swiper-slide">
@@ -290,8 +290,6 @@
                 </div>
               </div>
 
-
-
               <div class="swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_2.webp 1x, img/trainer_2@2x.webp 2x">
@@ -307,9 +305,6 @@
                   </ul>
                 </div>
               </div>
-
-
-
               <div class="swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_3.webp 1x, img/trainer_3@2x.webp 2x">
@@ -325,7 +320,6 @@
                   </ul>
                 </div>
               </div>
-
 
               <div class="swiper-slide">
                 <picture>
@@ -343,27 +337,64 @@
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons -->
-
-
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
           <div class="swiper-button-prev trainers__button-prev "></div>
           <div class="swiper-button-next trainers__button-next"></div>
         </div>
       </section>
 
-
-
-
-
-
-
-
+      <section class="features">
+        <div class="container container--features">
+          <h2>Наши преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item features-item features-item--line">
+              <div class="features-item__text">
+                <h3>Площадь </h3>
+                <p>Занимайтесь без очередей<br>и толкучки</p>
+              </div>
+              <div class="features-item__number">
+                <p>900</p>
+                <span>кв/м</span>
+              </div>
+            </li>
+            <li class="features__item features-item features-item--line">
+              <div class="features-item__text">
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдете место для<br>своей машины на нашей парковке</p>
+              </div>
+              <div class="features-item__number">
+                <p>70</p>
+                <span>машин</span>
+              </div>
+            </li>
+            <li class="features__item features-item features-item--main">
+              <h3>100</h3>
+              <p>Тренажеров</p>
+              <span>Современные тренажеры<br>на все группы мышц</span>
+            </li>
+            <li class="features__item features-item features-item--bottom">
+              <div class="features-item__text">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+              <div class="features-item__number">
+                <p>350</p>
+                <span>мест</span>
+              </div>
+            </li>
+            <li class="features__item features-item features-item--bottom">
+              <div class="features-item__text">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее<br>с профессиональным тренером</p>
+              </div>
+              <div class="features-item__number">
+                <p>5+</p>
+                <span>лет</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
 
 

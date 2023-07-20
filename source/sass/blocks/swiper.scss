@@ -22,7 +22,6 @@
   left: 0;
   bottom: 0;
   margin: auto;
-  color: red;
 
   &:active {
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
@@ -38,7 +37,7 @@
     width: 11px;
     height: 20px;
     background: url("../../img/svg/arrow-prew.svg") no-repeat center;
-    color: $primary-color;
+    color: $color-secondary-accent;
   }
 
   @include vp-1199 {
@@ -80,7 +79,6 @@
     width: 11px;
     height: 20px;
     background: url("../../img/svg/arrow-next.svg") no-repeat center;
-    color: red;
   }
 
   @include vp-1199 {
