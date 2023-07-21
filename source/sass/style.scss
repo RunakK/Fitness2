@@ -4,6 +4,7 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper";
+@import "vendor/data-accordion.scss";
 
 // Global
 // ---------------------------------
@@ -19,6 +20,7 @@
 // ---------------------------------
 
 @import "blocks/about";
+@import "blocks/accordion";
 @import "blocks/btn";
 @import "blocks/card";
 @import "blocks/custom-input";
@@ -26,6 +28,7 @@
 @import "blocks/data-tabs";
 @import "blocks/event-text";
 @import "blocks/event";
+@import "blocks/faq";
 @import "blocks/features-item";
 @import "blocks/features";
 @import "blocks/custom-select";

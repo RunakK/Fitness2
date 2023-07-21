@@ -1,0 +1,156 @@
+.accordion {
+  color: $color-primary;
+}
+
+.accordion__element {
+  color: $color-primary;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  padding: 32px 0 14px 0;
+
+  @include vp-1199 {
+    padding-top: 30px;
+  }
+
+  @include vp-767 {
+    padding: 20px 0 15px 0;
+  }
+}
+
+.accordion__element p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 9px;
+  padding-right: 40px;
+
+  @include vp-767 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.accordion__content {
+  padding-top: 7px;
+}
+
+.accordion__wrapper p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  padding-right: 135px;
+
+  @include vp-1199 {
+    padding-right: 106px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    padding-right: 0;
+    letter-spacing: -0.2px;
+    margin-bottom: 0;
+    padding-top: 7px;
+  }
+}
+
+.accordion__button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  width: 42px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #1c3374;
+    color: transparent;
+    right: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(#1c3374, #1c3374), linear-gradient(#1c3374, #1c3374);
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  @include hover-focus {
+
+    &::before {
+      border: 1px solid #1c3374;
+      background-color: #1c3374;
+    }
+
+    &::after {
+      background: linear-gradient($color-secondary, $color-secondary), linear-gradient($color-secondary, $color-secondary);
+      background-position: center;
+      background-size: 50% 2px, 2px 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include active {
+
+    &::before {
+      border: 1px solid #1c3374;
+      background-color: #1c3374;
+    }
+
+    &::after {
+      background: linear-gradient(red, red), linear-gradient($color-secondary, $color-secondary);
+      background-position: center;
+      background-size: 50% 2px, 2px 50%;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  @include vp-767 {
+
+    width: 10px;
+
+    &::before {
+      width: 32px;
+      height: 32px;
+    }
+
+    &::after {
+      width: 32px;
+      height: 32px;
+    }
+
+
+  }
+}
+
+.accordion__element.is-active .accordion__button {
+  &::before {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+  }
+
+  &::after {
+    background: linear-gradient($color-secondary, $color-secondary);
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+  }
+}
