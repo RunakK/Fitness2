@@ -1,0 +1,36 @@
+.faq__wrapper {
+  display: grid;
+}
+
+.faq__select-card.btn {
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  color: $color-primary;
+  outline: 1px solid rgba(16, 38, 84, 0.20);
+  outline-offset: -1px;
+  border: none;
+  text-transform: capitalize;
+
+  @include hover-focus {
+      color: $color-secondary;
+  }
+
+  @include vp-767 {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+.faq__select-card.is-active {
+  outline-color: transparent;
+  color: $color-secondary;
+  background: $red-blue-to-right;
+  border: none;
+}
+
+.faq h2 {
+  @include heading;
+  text-align: left;
+}

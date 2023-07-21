@@ -1,0 +1,126 @@
+.accordion {
+  color: $color-primary;
+}
+
+.accordion__element {
+  color: $color-primary;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.accordion__element p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+
+  @include vp-767 {
+    font-size: 24px;
+  }
+}
+
+.accordion__wrapper p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+}
+
+.accordion__button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  position: relative;
+  padding-right: 40px;
+  border: none;
+  background-color: transparent;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #1c3374;
+    color: transparent;
+    right: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(#1c3374, #1c3374), linear-gradient(#1c3374, #1c3374);
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  @include hover-focus {
+
+    &::before {
+      border: 1px solid #1c3374;
+      background-color: #1c3374;
+    }
+
+    &::after {
+      background: linear-gradient($color-secondary, $color-secondary), linear-gradient($color-secondary, $color-secondary);
+      background-position: center;
+      background-size: 50% 2px, 2px 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include active {
+
+    &::before {
+      border: 1px solid #1c3374;
+      background-color: #1c3374;
+    }
+
+    &::after {
+      background: linear-gradient(red, red), linear-gradient($color-secondary, $color-secondary);
+      background-position: center;
+      background-size: 50% 2px, 2px 50%;
+      background-repeat: no-repeat;
+    }
+
+  }
+}
+
+.accordion__element.is-active .accordion__button {
+  &::before {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+  }
+
+  &::after {
+    background: linear-gradient($color-secondary, $color-secondary);
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.accordion__wrapper p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+}

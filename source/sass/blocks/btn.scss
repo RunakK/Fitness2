@@ -49,7 +49,7 @@
 
     &:hover,
     &:focus {
-      outline-color: inherit;
+      outline-color: transparent;
       color: $color-secondary;
       background: $red-blue-to-right;
     }

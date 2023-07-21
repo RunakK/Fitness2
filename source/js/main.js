@@ -3,6 +3,9 @@ import {Form} from './modules/form-validate/form';
 import './modules/tabs/init-tabs';
 import './modules/tabs/tabs';
 import './modules/tabs/index';
+import './modules/accordion/accordions';
+import './modules/accordion/init-accordion';
+import './modules/accordion/index';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -13,6 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+
+
+  // swiper
+
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -35,21 +42,19 @@ window.addEventListener('DOMContentLoaded', () => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       // when window width is >= 768px
       768: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       // when window width is >= 1200px
       1200: {
         slidesPerView: 4,
         spaceBetween: 40,
-      }
-    }
-
-
+      },
+    },
   });
 
 

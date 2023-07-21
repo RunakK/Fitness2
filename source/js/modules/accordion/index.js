@@ -1,8 +1,7 @@
-import {initTabs} from './init-tabs';
+import {initAccordions} from './init-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
-    initTabs();
+    initAccordions();
   });
 });
-
