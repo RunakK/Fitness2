@@ -1,0 +1,74 @@
+.form {
+  background-color: $color-primary;
+  color: $color-secondary;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 191px 70px 103px;
+}
+
+.form__contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.form h2 {
+  margin: 0;
+  @include heading;
+  font-weight: 800;
+  line-height: 156%;
+  color: $color-secondary;
+}
+
+.form input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819c;
+  padding: 10px 0;
+  color: $color-secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+
+  &::-webkit-input-placeholder {
+    color: $color-secondary;
+  }
+
+  &::-moz-placeholder {
+    color: $color-secondary;
+  }
+
+  &:-moz-placeholder {
+    color: $color-secondary;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-secondary;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-secondary;
+  }
+
+  @include focus {
+    outline: none;
+    border: 1px solid $color-secondary;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.form__input-error {
+  border-bottom: $color-error;
+  color: $color-error;
+}
+
+.form__button {
+  font-size: 14px;
+  grid-column: span 2;
+}
