@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // swiper
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.trainers__wrapper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -34,8 +34,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainers__button-next',
+      prevEl: '.trainers__button-prev',
     },
 
     breakpoints: {
@@ -55,6 +55,43 @@ window.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 40,
       },
     },
+  });
+
+  const swiperReviews = new Swiper('.swiper-reviews', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-reviews__next',
+      prevEl: '.swiper-reviews__prev',
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 150,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 150,
+      },
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 150,
+      },
+    },
+
   });
 
 
