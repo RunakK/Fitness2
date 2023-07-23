@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Фитнес центр в Омске">
   <title>Finess2</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -37,7 +37,7 @@
             <p>омск</p>
             <h1>ФИТНЕС<br>ЦЕНТР</h1>
             <span>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </span>
-            <button class="btn hero__button">Купить абонемент</button>
+            <a class="btn hero__button" href="#buy-abonnements">Купить абонемент</a>
             <picture class="hero__img">
               <source type="image/webp" media="(max-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
@@ -70,9 +70,23 @@
             </picture>
           </div>
           <!-- <iframe class="about__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+          <div class="about__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+            <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <picture>
+              <source type="image/webp" media="(max-width: 1366px)" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+              <source media="(max-width: 1366px)" srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="./img/video-tablet.png 1x, ./img/video-tablet@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="./img/video-mobile.png 1x, ./img/video-mobile@2x.png 2x">
+              <img src="./img/video-desktop.webp" srcset="./img/video-desktop@2x.png 2x" width="364" height="228">
+            </picture>
+            <button class="about__button"></button>
+            <!-- <img src="./img/video-desktop.png" srcset="./img/video-desktop@2x.png 2x" width="364" height="228"> -->
+          </div>
         </div>
       </section>
-      <section class="tabs">
+      <section class="tabs" id="buy-abonnements">
         <div class="container">
           <h2>Абонементы</h2>
           <div class="tabs__wrapper" data-tabs="parent">
@@ -414,7 +428,7 @@
                   <source type="image/webp" srcset="img/promo_desktop.webp 1x, img/promo_desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/promo_mobile.png 1x, img/promo_mobile@2x.png 2x">
                   <source media="(max-width: 1199px)" srcset="img/promo_tablet.png 1x, img/promo_tablet@2x.png 2x">
-                  <source srcset="img/promo_desktop.png 1x, img/promo_desktop@2x.png 2x">
+                  <source type="image/webp" srcset="img/promo_desktop.png 1x, img/promo_desktop@2x.png 2x">
                   <img src="./img/promo-desktop.png" srcset="./img/promo_desktop@2x.png 2x" width="280" height="462">
                 </picture>
               </div>
@@ -423,12 +437,12 @@
               <li class="promo__item">
                 <h3>Месяц бесплатно</h3>
                 <p>Приведи друга, получи абонемент&nbspв подарок</p>
-                <a href="" class="promo__button">подробнее</a>
+                <a href="#" class="promo__button">подробнее</a>
               </li>
               <li class="promo__item">
                 <h3>Скидка 20%</h3>
                 <p>Корпоративный фитнес с&nbspкомандой</p>
-                <a href="" class="promo__button">подробнее</a>
+                <a href="#" class="promo__button">подробнее</a>
               </li>
             </ul>
 
@@ -660,15 +674,21 @@
         <div class="form">
           <div class="form__wrapper">
             <h2>Бесплатное занятие </h2>
-            <form class="form__contacts" action="https://echo.htmlacademy.ru" method="get">
-              <label class="form__label-name" for="name">
-                <input class="form__input-name" type="text" id="name" placeholder="Имя">
-              </label>
-              <label class="form__label-number" for="number">
-                <input class="form__input-number" type="number" name="number" id="number" placeholder="Телефон">
-              </label>
-              <button class="btn form__button" type="button">отправить</button>
-            </form>
+            <div data="data-form-validate" data-form-validate="" data-callback="base">
+              <form class="form__contacts" action="https://echo.htmlacademy.ru" method="get">
+                <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label for="name">
+                    <input type="text" name="name" id="name" placeholder="Имя">
+                  </label>
+                </div>
+                <div data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                  <label for="number">
+                    <input type="tel" name="number" id="number" placeholder="Телефон">
+                  </label>
+                </div>
+                <button class="btn form__button" type="submit">отправить</button>
+              </form>
+            </div>
           </div>
         </div>
 
@@ -699,18 +719,6 @@
         </div>
 
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
     <footer class="footer">

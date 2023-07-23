@@ -17,6 +17,23 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  // video
+
+  const video = document.querySelector('.about__button');
+  const aboutVideo = document.querySelector('.about__video');
+
+
+  video.addEventListener('click', () => {
+    if (video.classList.contains('video-is-active')) {
+      return;
+    }
+
+    video.classList.add('video-is-active');
+
+    const src = aboutVideo.dataset.src;
+
+    aboutVideo.insertAdjacentHTML('afterbegin', '<iframe width="560" height="315" src="' + src + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+  });
 
   // swiper
 

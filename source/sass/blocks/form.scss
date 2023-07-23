@@ -6,13 +6,38 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 56px 191px 70px 103px;
+  padding: 56px 168px 63px 103px;
+  margin-left: auto;
+  max-width: 683px;
+
+  @include vp-1199 {
+    padding-left: 132px;
+    padding-right: 161px;
+    padding-bottom: 67px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 58px 15px;
+    padding-bottom: 68px;
+  }
 }
 
 .form__contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-rows: auto auto;
+  gap: 27px;
+  column-gap: 25px;
+
+  @include vp-1199 {
+    column-gap: 63px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form h2 {
@@ -21,17 +46,27 @@
   font-weight: 800;
   line-height: 156%;
   color: $color-secondary;
+  margin-bottom: 11px;
+
+  @include vp-1199 {
+    margin-bottom: 17px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+  }
 }
 
 .form input {
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid #74819c;
-  padding: 10px 0;
+  padding: 8px 0;
   color: $color-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  width: 100%;
 
   &::-webkit-input-placeholder {
     color: $color-secondary;
@@ -63,12 +98,22 @@
   }
 }
 
-.form__input-error {
+.form__input-error.is-invalid {
   border-bottom: $color-error;
   color: $color-error;
+}
+
+.form__input-error.is-valid {
+  color: 	#008000;
 }
 
 .form__button {
   font-size: 14px;
   grid-column: span 2;
+  padding: 16px 10px;
+
+  @include vp-767 {
+    grid-column: span 1;
+    margin-top: 8px;
+  }
 }
