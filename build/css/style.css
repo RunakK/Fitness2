@@ -3653,7 +3653,7 @@ button,
   }
 }
 
-.form__contacts {
+.form__contacts form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -3666,14 +3666,14 @@ button,
           column-gap: 25px;
 }
 @media (max-width: 1199px) {
-  .form__contacts {
+  .form__contacts form {
     -webkit-column-gap: 63px;
        -moz-column-gap: 63px;
             column-gap: 63px;
   }
 }
 @media (max-width: 767px) {
-  .form__contacts {
+  .form__contacts form {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
