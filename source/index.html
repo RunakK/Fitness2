@@ -38,13 +38,15 @@
             <h1>ФИТНЕС<br>ЦЕНТР</h1>
             <span>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </span>
             <a class="btn hero__button" href="#buy-abonnements">Купить абонемент</a>
-            <picture class="hero__img">
-              <source type="image/webp" media="(max-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
-              <source media="(max-width: 1366px)" srcset="img/hero-desktop.png 1x, img/hero-desktop@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="img/hero-tablet.png 1x, img/hero-tablet@2x.png 2x">
-              <img src="./img/hero-desktop.png" srcset="./img/hero-desktop@2x.png 2x" width="500" height="556" alt="мужчина в тёмной футолке с надписью супермен">
-            </picture>
+            <div class="hero__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                <source media="(max-width: 1366px)" srcset="img/hero-desktop.png 1x, img/hero-desktop@2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="img/hero-tablet.png 1x, img/hero-tablet@2x.png 2x">
+                <img src="./img/hero-desktop.png" srcset="./img/hero-desktop@2x.png 2x" width="500" height="556" alt="мужчина в тёмной футолке с надписью супермен">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -86,7 +88,7 @@
       <section class="tabs" id="buy-abonnements">
         <div class="container">
           <h2>Абонементы</h2>
-          <div class="tabs__wrapper" data-tabs="parent">
+          <div class="tabs__wrapper" data-tabs="parent" data-height="max">
             <div class="tabs__select-list" data-tabs="controls">
               <button class="tabs__select-card" type="button" data-index="1" data-tabs="control">1 месяц</button>
               <button class="tabs__select-card" type="button" data-index="2" data-tabs="control">6 месяцев</button>

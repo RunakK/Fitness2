@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
   column-gap: 30px;
 
   @include vp-767 {
