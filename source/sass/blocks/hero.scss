@@ -33,9 +33,7 @@
 }
 
 .hero__img {
-  position: absolute;
-  left: 460px;
-  top: -22px;
+  grid-area: 1/4/10;
 
   @include vp-1199 {
     position: relative;

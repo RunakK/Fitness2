@@ -1,20 +1,34 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 76px;
+  }
+}
+
 .navigation__list {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0 auto;
+  padding-left: 17px;
 
   @include vp-1199 {
     gap: 30px;
   }
 
   @include vp-767 {
-    flex-direction: column;
     height: 140px;
     align-items: flex-start;
+    display: contents;
   }
 }
 
@@ -23,8 +37,12 @@
   margin: 0;
 
   @include vp-767 {
-    &:first-child {
-      padding-top: 50px;
+    &:nth-child(1) {
+      grid-area: 2/1/3/2;
+    }
+
+    &:nth-child(2) {
+      grid-area: 3/1/4/2;
     }
   }
 }
