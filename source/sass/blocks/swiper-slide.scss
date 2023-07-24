@@ -12,6 +12,7 @@
         margin: 0;
         order: -1;
       }
+
       & .trainers__info {
         visibility: visible;
       }
@@ -37,7 +38,6 @@
   background: rgba(16, 38, 84, 0.89);
   min-height: 294px;
   color: $color-secondary;
-  padding: 58px 46px 58px 46px;
   padding: 4.24vw 3.36vw;
   width: 100%;
   height: 100%;
@@ -83,4 +83,3 @@
   display: flex;
   flex-direction: column;
 }
-

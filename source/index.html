@@ -60,29 +60,26 @@
           </div>
           <div class="about__picture">
             <picture>
-              <source type="image/webp" media="(max-width: 1366px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
-              <source media="(max-width: 1366px)" srcset="img/gym-desktop.png 1x, img/gym-desktop@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="img/gym-tablet.png 1x, img/gym-tablet@2x.png 2x">
-              <source media="(max-width: 767px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+              <source srcset="./img/gym-desktop.png 1x, ./img/gym-desktop@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="./img/gym-tablet.png 1x, ./img/gym-tablet@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="./img/gym-mobile.png 1x, ./img/gym-mobile@2x.png 2x">
               <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401" alt="просторный светлый зал с тренажёрами">
             </picture>
           </div>
-          <!-- <iframe class="about__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
           <div class="about__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
-            <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
             <picture>
-              <source type="image/webp" media="(max-width: 1366px)" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
               <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
-              <source media="(max-width: 1366px)" srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
+              <source srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
               <source media="(max-width: 1199px)" srcset="./img/video-tablet.png 1x, ./img/video-tablet@2x.png 2x">
               <source media="(max-width: 767px)" srcset="./img/video-mobile.png 1x, ./img/video-mobile@2x.png 2x">
               <img src="./img/video-desktop.webp" srcset="./img/video-desktop@2x.png 2x" width="364" height="228" alt="зал с тренажёрами">
             </picture>
             <button class="about__button"></button>
-            <!-- <img src="./img/video-desktop.png" srcset="./img/video-desktop@2x.png 2x" width="364" height="228"> -->
           </div>
         </div>
       </section>
@@ -104,7 +101,7 @@
                     <span>5000 ₽</span>
                     <span>5000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Дневной</h3>
@@ -113,7 +110,7 @@
                     <span>1700 ₽</span>
                     <span>1700</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -122,7 +119,7 @@
                     <span>2700 ₽</span>
                     <span>2700</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__card-list" data-tabs="element">
@@ -133,7 +130,7 @@
                     <span>25000 ₽</span>
                     <span>25000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Дневной</h3>
@@ -142,7 +139,7 @@
                     <span>8000 ₽</span>
                     <span>8000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -151,7 +148,7 @@
                     <span>12000 ₽</span>
                     <span>12000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__card-list" data-tabs="element">
@@ -162,7 +159,7 @@
                     <span>40000 ₽</span>
                     <span>40000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Дневной</h3>
@@ -171,7 +168,7 @@
                     <span>30000 ₽</span>
                     <span>30000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -180,7 +177,7 @@
                     <span>20000 ₽</span>
                     <span>20000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -700,7 +697,7 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <h3>Адрес:</h3>
-                <p>г. Омск, ул. 60 лет Октября, 7</p>
+                <p>г. Омск, ул.&nbsp;60&nbsp;лет&nbsp;Октября,&nbsp;7</p>
               </li>
               <li class="contacts__item">
                 <h3>Телефон:</h3>
@@ -737,7 +734,7 @@
           <ul class="footer__social social">
             <li class="social__card"><a class="social__link" href="">
                 <span class="visually-hidden">мы вконтакте</span>
-                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
@@ -745,14 +742,14 @@
             <li class="social__card">
               <a class="social__link" href="">
                 <span class="visually-hidden">мы в одноклассниках</span>
-                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
             <li class="social__card"><a class="social__link" href="">
                 <span class="visually-hidden">мы на реддит</span>
-                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#Reddit"></use>
                 </svg>
               </a>
@@ -765,7 +762,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>

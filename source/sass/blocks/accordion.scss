@@ -6,7 +6,7 @@
   color: $color-primary;
   display: grid;
   grid-template-columns: auto 1fr;
-  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   padding: 32px 0 14px 0;
 
   @include vp-1199 {
@@ -93,7 +93,6 @@
   }
 
   @include hover-focus {
-
     &::before {
       border: 1px solid #1c3374;
       background-color: #1c3374;
@@ -108,23 +107,20 @@
   }
 
   @include active {
-
     &::before {
       border: 1px solid #1c3374;
       background-color: #1c3374;
     }
 
     &::after {
-      background: linear-gradient(red, red), linear-gradient($color-secondary, $color-secondary);
+      background: linear-gradient(#ed0233, #ed0233), linear-gradient($color-secondary, $color-secondary);
       background-position: center;
       background-size: 50% 2px, 2px 50%;
       background-repeat: no-repeat;
     }
-
   }
 
   @include vp-767 {
-
     width: 10px;
 
     &::before {
@@ -136,8 +132,6 @@
       width: 32px;
       height: 32px;
     }
-
-
   }
 }
 

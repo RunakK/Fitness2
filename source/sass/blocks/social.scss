@@ -21,4 +21,43 @@
   display: block;
   color: $color-secondary;
   box-sizing: border-box;
+  position: relative;
+  color: #030a1a;
+
+  &::before {
+    content: "";
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    display: block;
+  }
+
+  @include hover-focus {
+    color: $color-secondary;
+
+    &::before {
+      background-color: #103aae;
+    }
+  }
+
+  &:active {
+    color: $color-secondary;
+
+    &::before {
+      background-color: #102654;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    background-color: #030a1a;
+  }
 }
+
+.social__icon {
+  position: absolute;
+  top: 0;
+}
+

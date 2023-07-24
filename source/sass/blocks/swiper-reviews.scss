@@ -1,5 +1,4 @@
 .swiper.swiper-reviews {
-  padding: 50px;
   width: 100%;
   max-width: 720px;
   padding: 37px 80px 50px;
@@ -21,7 +20,7 @@
   grid-template-columns: minmax(80px, auto) 1fr;
   height: auto;
   column-gap: 27px;
-  box-shadow: 0 0 40px rgba(28, 51, 116, 0.20);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 
   @include vp-1199 {
     max-width: 100%;
@@ -32,7 +31,6 @@
     padding: 43px 33px;
     padding-bottom: 32px;
     max-width: 100%;
-    width: 226px;
     column-gap: 15px;
     row-gap: 14px;
     width: 98%;
@@ -136,6 +134,7 @@
 
   @include vp-767 {
     right: -3px;
+
     &::after {
       width: 16px;
       height: 16px;
@@ -147,14 +146,12 @@
 }
 
 .swiper-button-prev.swiper-reviews__prev {
-
   position: absolute;
   height: 56px;
   width: 56px;
   top: -12px;
   bottom: 0;
   margin: auto;
-  color: red;
 
   &::after {
     content: "";
@@ -175,6 +172,7 @@
 
   @include vp-767 {
     left: -3px;
+
     &::after {
       width: 16px;
       height: 16px;

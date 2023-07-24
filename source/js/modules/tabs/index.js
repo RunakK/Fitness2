@@ -5,4 +5,3 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
   });
 });
-

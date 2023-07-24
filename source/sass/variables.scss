@@ -24,7 +24,7 @@ $color-error:                       #ff121f;
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $red-blue-to-right-bottom:          linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 $red-blue-to-right:                 linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
-$blue-red-conic:                    conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23633825778961deg, #b80027 313.3060026168823deg);
+$blue-red-conic:                    conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23deg, #b80027 313.3deg);
 
 $background-secondary:              #f8f9fc;
 $background-banners:                #ed0233;
@@ -71,4 +71,3 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
-
