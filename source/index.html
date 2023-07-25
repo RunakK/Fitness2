@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Фитнес центр в Омске">
   <title>Finess2</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -26,7 +26,7 @@
           <a href="" class="header__logo-link">
             supergym
           </a>
-          <a class="header__phone-link" href="8-800-555-55-55">8-800-555-55-55</a>
+          <a class="header__phone-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
         </div>
       </div>
     </header>
@@ -37,14 +37,16 @@
             <p>омск</p>
             <h1>ФИТНЕС<br>ЦЕНТР</h1>
             <span>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </span>
-            <button class="btn hero__button">Купить абонемент</button>
-            <picture class="hero__img">
-              <source type="image/webp" media="(max-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
-              <source media="(max-width: 1366px)" srcset="img/hero-desktop.png 1x, img/hero-desktop@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="img/hero-tablet.png 1x, img/hero-tablet@2x.png 2x">
-              <img src="./img/hero-desktop.png" srcset="./img/hero-desktop@2x.png 2x" width="500" height="556">
-            </picture>
+            <a class="btn hero__button" href="#buy-abonnements">Купить абонемент</a>
+            <div class="hero__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                <source media="(max-width: 1366px)" srcset="img/hero-desktop.png 1x, img/hero-desktop@2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="img/hero-tablet.png 1x, img/hero-tablet@2x.png 2x">
+                <img src="./img/hero-desktop.png" srcset="./img/hero-desktop@2x.png 2x" width="500" height="556" alt="мужчина в тёмной футолке с надписью супермен">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -60,22 +62,33 @@
           </div>
           <div class="about__picture">
             <picture>
-              <source type="image/webp" media="(max-width: 1366px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
-              <source media="(max-width: 1366px)" srcset="img/gym-desktop.png 1x, img/gym-desktop@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="img/gym-tablet.png 1x, img/gym-tablet@2x.png 2x">
-              <source media="(max-width: 767px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
-              <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401">
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+              <source srcset="./img/gym-desktop.png 1x, ./img/gym-desktop@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="./img/gym-tablet.png 1x, ./img/gym-tablet@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="./img/gym-mobile.png 1x, ./img/gym-mobile@2x.png 2x">
+              <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401" alt="просторный светлый зал с тренажёрами">
             </picture>
           </div>
-          <!-- <iframe class="about__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+          <div class="about__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+            <picture>
+              <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+              <source srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="./img/video-tablet.png 1x, ./img/video-tablet@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="./img/video-mobile.png 1x, ./img/video-mobile@2x.png 2x">
+              <img src="./img/video-desktop.webp" srcset="./img/video-desktop@2x.png 2x" width="364" height="228" alt="зал с тренажёрами">
+            </picture>
+            <button class="about__button"></button>
+          </div>
         </div>
       </section>
-      <section class="tabs">
+      <section class="tabs" id="buy-abonnements">
         <div class="container">
           <h2>Абонементы</h2>
-          <div class="tabs__wrapper" data-tabs="parent">
+          <div class="tabs__wrapper" data-tabs="parent" data-height="max">
             <div class="tabs__select-list" data-tabs="controls">
               <button class="tabs__select-card" type="button" data-index="1" data-tabs="control">1 месяц</button>
               <button class="tabs__select-card" type="button" data-index="2" data-tabs="control">6 месяцев</button>
@@ -90,7 +103,7 @@
                     <span>5000 ₽</span>
                     <span>5000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Дневной</h3>
@@ -99,7 +112,7 @@
                     <span>1700 ₽</span>
                     <span>1700</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -108,7 +121,7 @@
                     <span>2700 ₽</span>
                     <span>2700</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__card-list" data-tabs="element">
@@ -119,7 +132,7 @@
                     <span>25000 ₽</span>
                     <span>25000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Дневной</h3>
@@ -128,7 +141,7 @@
                     <span>8000 ₽</span>
                     <span>8000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -137,7 +150,7 @@
                     <span>12000 ₽</span>
                     <span>12000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__card-list" data-tabs="element">
@@ -148,7 +161,7 @@
                     <span>40000 ₽</span>
                     <span>40000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Дневной</h3>
@@ -157,7 +170,7 @@
                     <span>30000 ₽</span>
                     <span>30000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
                 <li class="tabs__card card">
                   <h3>Полный день</h3>
@@ -166,7 +179,7 @@
                     <span>20000 ₽</span>
                     <span>20000</span>
                   </div>
-                  <a class="btn btn--dark card__button">купить абонемент</a>
+                  <a class="btn btn--dark card__button" href="#">купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -198,7 +211,7 @@
               <source media="(max-width: 1366px)" srcset="img/super-games.png 1x, img/super-games@2x.png 2x">
               <source media="(max-width: 1199px)" srcset="img/super-games-tablet.png 1x, img/super-games-tablet@2x.png 2x">
               <source media="(max-width: 767px)" srcset="img/super-games-mobile.png 1x, img/super-games-mobile@2x.png 2x">
-              <img src="./img/super-games.png" srcset="./img/super-games@2x.png 2x" width="660" height="500">
+              <img src="./img/super-games.png" srcset="./img/super-games@2x.png 2x" width="660" height="500" alt="Спортивный мужчина">
             </picture>
           </div>
         </div>
@@ -216,7 +229,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_1.webp 1x, img/trainer_1@2x.webp 2x">
-                  <img src="./img/trainer_1.png" srcset="./img/trainer_1@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_1.png" srcset="./img/trainer_1@2x.png 2x" width="260" height="294" alt="Портретное фото женщины с тёмными волосами">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -232,7 +245,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_2.webp 1x, img/trainer_2@2x.webp 2x">
-                  <img src="./img/trainer_2.png" srcset="./img/trainer_2@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_2.png" srcset="./img/trainer_2@2x.png 2x" width="260" height="294" alt="Мужчина южной национальности">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -247,7 +260,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_3.webp 1x, img/trainer_3@2x.webp 2x">
-                  <img src="./img/trainer_3.png" srcset="./img/trainer_3@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_3.png" srcset="./img/trainer_3@2x.png 2x" width="260" height="294" alt="Парень в очках с чубчиком">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -262,7 +275,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_4.webp 1x, img/trainer_4@2x.webp 2x">
-                  <img src="./img/trainer_4.png" srcset="./img/trainer_4@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_4.png" srcset="./img/trainer_4@2x.png 2x" width="260" height="294" alt="Женщина сидит по турецки">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -277,7 +290,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_1.webp 1x, img/trainer_1@2x.webp 2x">
-                  <img src="./img/trainer_1.png" srcset="./img/trainer_1@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_1.png" srcset="./img/trainer_1@2x.png 2x" width="260" height="294" alt="Наш тренер">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -293,7 +306,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_2.webp 1x, img/trainer_2@2x.webp 2x">
-                  <img src="./img/trainer_2.png" srcset="./img/trainer_2@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_2.png" srcset="./img/trainer_2@2x.png 2x" width="260" height="294" alt="Наш тренер">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -308,7 +321,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_3.webp 1x, img/trainer_3@2x.webp 2x">
-                  <img src="./img/trainer_3.png" srcset="./img/trainer_3@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_3.png" srcset="./img/trainer_3@2x.png 2x" width="260" height="294" alt="Наш тренер">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -324,7 +337,7 @@
               <div class="swiper-slide trainers__slide">
                 <picture>
                   <source type="image/webp" srcset="img/trainer_4.webp 1x, img/trainer_4@2x.webp 2x">
-                  <img src="./img/trainer_4.png" srcset="./img/trainer_4@2x.png 2x" width="260" height="294">
+                  <img src="./img/trainer_4.png" srcset="./img/trainer_4@2x.png 2x" width="260" height="294" alt="Наш тренер">
                 </picture>
                 <div class="trainers__info">
                   <h3>Анна Павлова</h3>
@@ -414,21 +427,21 @@
                   <source type="image/webp" srcset="img/promo_desktop.webp 1x, img/promo_desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/promo_mobile.png 1x, img/promo_mobile@2x.png 2x">
                   <source media="(max-width: 1199px)" srcset="img/promo_tablet.png 1x, img/promo_tablet@2x.png 2x">
-                  <source srcset="img/promo_desktop.png 1x, img/promo_desktop@2x.png 2x">
-                  <img src="./img/promo-desktop.png" srcset="./img/promo_desktop@2x.png 2x" width="280" height="462">
+                  <source type="image/webp" srcset="img/promo_desktop.png 1x, img/promo_desktop@2x.png 2x">
+                  <img src="./img/promo-desktop.png" srcset="./img/promo_desktop@2x.png 2x" width="280" height="462" alt="Спортивная женщина в лосинах и топике">
                 </picture>
               </div>
             </div>
             <ul class="promo__list">
               <li class="promo__item">
                 <h3>Месяц бесплатно</h3>
-                <p>Приведи друга, получи абонемент&nbspв подарок</p>
-                <a href="" class="promo__button">подробнее</a>
+                <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                <a href="#" class="promo__button">подробнее</a>
               </li>
               <li class="promo__item">
                 <h3>Скидка 20%</h3>
-                <p>Корпоративный фитнес с&nbspкомандой</p>
-                <a href="" class="promo__button">подробнее</a>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
+                <a href="#" class="promo__button">подробнее</a>
               </li>
             </ul>
 
@@ -477,7 +490,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <p>Сколько тренеров работает в клубе и какова их&nbspквалификация?</p>
+                  <p>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</p>
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -528,16 +541,16 @@
 
               <div class="accordion for-load" data-tabs="element" data-accordion="parent" data-close-inner="data-close-inner">
                 <div class="accordion__element" data-accordion="element">
-                  <p>Предлагает ли клуб услуги по&nbspконсультированию по&nbspвопросам питания?</p>
+                  <p>Предлагает ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</p>
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
-                      <p>Да. Вы можете обратиться как к&nbspсвоему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbspпредложит программу питания.</p>
+                      <p>Да. Вы можете обратиться как к&nbsp;своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <p>Проводятся ли в клубе какие&nbsp-&nbspлибо мероприятия или&nbspсоревнования?</p>
+                  <p>Проводятся ли в клубе какие&nbsp;либо мероприятия или&nbsp;соревнования?</p>
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -621,7 +634,7 @@
                 <div class="swiper-reviews__image">
                   <picture>
                     <source type="image/webp" srcset="img/review_desktop.webp 1x, img/review_desktop@2x.webp 2x">
-                    <img src="./img/review_desktop.png" srcset="./img/review_desktop@2x.png 2x" width="80" height="80">
+                    <img src="./img/review_desktop.png" srcset="./img/review_desktop@2x.png 2x" width="80" height="80" alt="Голова женщины с пучком на голове">
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
@@ -631,7 +644,7 @@
                 <div class="swiper-reviews__image">
                   <picture>
                     <source type="image/webp" srcset="img/review_desktop.webp 1x, img/review_desktop@2x.webp 2x">
-                    <img src="./img/review_desktop.png" srcset="./img/review_desktop@2x.png 2x" width="80" height="80">
+                    <img src="./img/review_desktop.png" srcset="./img/review_desktop@2x.png 2x" width="80" height="80" alt="Голова женщины с пучком на голове">
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
@@ -641,7 +654,7 @@
                 <div class="swiper-reviews__image">
                   <picture>
                     <source type="image/webp" srcset="img/review_desktop.webp 1x, img/review_desktop@2x.webp 2x">
-                    <img src="./img/review_desktop.png" srcset="./img/review_desktop@2x.png 2x" width="80" height="80">
+                    <img src="./img/review_desktop.png" srcset="./img/review_desktop@2x.png 2x" width="80" height="80" alt="Голова женщины с пучком на голове">
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
@@ -649,44 +662,81 @@
               </div>
             </div>
             <div class="swiper-button-prev swiper-reviews__prev"></div>
-          <div class="swiper-button-next swiper-reviews__next"></div>
+            <div class="swiper-button-next swiper-reviews__next"></div>
           </div>
         </div>
       </section>
 
 
+      <section class="contacts-form">
+
+        <div class="form">
+          <div class="form__wrapper">
+            <h2>Бесплатное занятие </h2>
+            <div class="form__contacts" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label for="name">
+                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                  </label>
+                </div>
+                <div data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                  <label for="number">
+                    <input type="tel" name="number" id="number" placeholder="Телефон" required>
+                  </label>
+                </div>
+                <button class="btn form__button" type="submit">отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
 
 
+        <div class="contacts">
+          <div class="contacts__wrapper">
+            <h2>Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул.&nbsp;60&nbsp;лет&nbsp;Октября,&nbsp;7</p>
+              </li>
+              <li class="contacts__item">
+                <h3>Телефон:</h3>
+                <a href="tel:8-800-555-55-55"> 8-800-555-55-55 </a>
+              </li>
+              <li class="contacts__item">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__item">
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
+      </section>
 
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo-link" href="">supergym</a>
           <nav class="footer__navigation navigation">
+            <a class="footer__logo-link" href="">supergym</a>
             <ul class="navigation__list">
-              <li class="navigation__card"><a class="navigation__link" href="#">Услуги</a></li>
-              <li class="navigation__card"><a class="navigation__link" href="#">Абонементы</a></li>
-              <li class="navigation__card"><a class="navigation__link" href="#">Акции</a></li>
-              <li class="navigation__card"><a class="navigation__link" href="#">Тренеры</a></li>
-              <li class="navigation__card"><a class="navigation__link" href="#">Расписание</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Услуги</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Абонементы</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Акции</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Тренеры</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Расписание</a></li>
             </ul>
           </nav>
           <ul class="footer__social social">
             <li class="social__card"><a class="social__link" href="">
                 <span class="visually-hidden">мы вконтакте</span>
-                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
@@ -694,14 +744,14 @@
             <li class="social__card">
               <a class="social__link" href="">
                 <span class="visually-hidden">мы в одноклассниках</span>
-                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
             <li class="social__card"><a class="social__link" href="">
                 <span class="visually-hidden">мы на реддит</span>
-                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#Reddit"></use>
                 </svg>
               </a>
@@ -714,7 +764,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>

@@ -22,11 +22,6 @@
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
-
-  @include vp-767 {
-
-  }
-
 }
 
 .promo h2 {
@@ -54,11 +49,9 @@
   @include vp-767 {
     flex-direction: column;
   }
-
 }
 
 .promo__image {
-
   @include vp-1199 {
     width: 399px;
     flex-shrink: 0;
@@ -87,20 +80,17 @@
 
   @include vp-767 {
     text-align: center;
+    padding-bottom: 42px;
   }
 }
 
 .promo__description span {
-  color: #FFF;
-  font-family: Roboto Condensed;
+  color: $color-secondary;
+  font-family: $ff-RobotoCondensed;
   font-size: 28px;
   font-weight: 700;
   line-height: 156%;
   margin-top: -9px;
-
-  @include vp-1199 {}
-
-  @include vp-767 {}
 }
 
 .promo__description p {
@@ -121,8 +111,6 @@
     margin-top: -8px;
     margin-bottom: 31px;
   }
-
-
 }
 
 .promo__description .promo__button {
@@ -133,10 +121,6 @@
     line-height: 150%;
     letter-spacing: 1.9px;
   }
-}
-
-.promo__button {
-  color: $color-secondary;
 }
 
 .promo__list {
@@ -157,10 +141,9 @@
 }
 
 .promo__item {
-  color: #1C3374;
+  color: #1c3374;
   border: 7px solid transparent;
-  // border-image: linear-gradient(148.82deg,#d10a42 .85%,#00359f 100%) 7;
-  border-image: linear-gradient(-184.18deg, #d10a42 .85%, #00359f 100%) 7;
+  border-image: linear-gradient(-184.18deg, #d10a42 0.85%, #00359f 100%) 7;
   padding: 35px;
   padding-left: 27px;
   padding-top: 20px;
@@ -173,7 +156,6 @@
   }
 
   @include vp-767 {
-    padding: 46px;
     text-align: center;
     padding: 33px;
     padding-bottom: 40px;
@@ -204,7 +186,7 @@
 }
 
 .promo__button {
-  color: #1C3374;
+  color: #1c3374;
   font-size: 12px;
   font-weight: 700;
   line-height: normal;
@@ -215,4 +197,25 @@
 
 .promo__button--secondary {
   color: $color-secondary;
+
+  @include vp-1199 {
+    color: $color-secondary;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    outline: 1px solid $color-secondary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }

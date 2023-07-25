@@ -30,10 +30,6 @@
     color: $color-primary;
   }
 
-  &:disabled {
-    opacity: 0.5;
-  }
-
   &--dark {
     outline: 2px solid $color-primary;
     outline-offset: -2px;

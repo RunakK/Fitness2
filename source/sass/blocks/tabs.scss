@@ -26,6 +26,7 @@
   @include vp-767 {
     padding-top: 63px;
     padding-bottom: 70px;
+
     &::before {
       display: none;
     }
@@ -49,17 +50,35 @@
 
 .tabs__select-card {
   list-style: none;
-  color: rgba(16, 38, 84, 0.50);
+  color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   line-height: 150%;
   border: none;
   padding: 0;
   background-color: transparent;
+  position: relative;
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-primary;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #d10a42;
+      bottom: -13px;
+    }
+  }
 
   @include vp-767 {
     font-size: 16px;
   }
 
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .tabs__item-list {
@@ -73,12 +92,14 @@
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   padding-bottom: 12px;
   margin-bottom: 30px;
   width: 30%;
   justify-content: space-between;
   box-sizing: border-box;
+  row-gap: 20px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     width: 43.2vw;
@@ -132,9 +153,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #D10A42;
+    background-color: #d10a42;
     bottom: -13px;
   }
 }
-
-
