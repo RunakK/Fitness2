@@ -2725,13 +2725,10 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%;
   padding: 0;
   margin: 0;
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column-align: center;
-      justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4002,10 +3999,8 @@ button,
   -ms-grid-column: 2;
   grid-column: 2;
   margin: 0;
-  margin-bottom: 30px;
   text-align: right;
   padding-right: 50px;
-  margin-top: 106px;
   max-width: 300px;
   line-height: normal;
   margin-top: 87px;
@@ -4024,8 +4019,6 @@ button,
   .hero__wrapper p:first-child {
     font-size: 28px;
     letter-spacing: 0.84px;
-    margin-bottom: 20px;
-    margin-top: 40px;
     padding-right: 0;
     max-width: 180px;
     margin-bottom: 14px;
@@ -4088,7 +4081,6 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__wrapper span {
-    padding-bottom: 47px;
     width: 113px;
     padding-bottom: 47px;
   }
@@ -4097,7 +4089,6 @@ button,
   .hero__wrapper span {
     top: 76px;
     left: 15px;
-    min-width: 113px;
     width: 100%;
     margin-right: -33px;
     padding-bottom: 33px;
@@ -4607,7 +4598,6 @@ button,
 
 .social__link {
   display: block;
-  color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -5184,7 +5174,6 @@ button,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   row-gap: 20px;
-  flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .tabs__select-list {

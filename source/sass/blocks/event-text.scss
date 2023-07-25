@@ -5,11 +5,10 @@
   column-gap: 4.3vw;
   background-color: $background-banners;
   color: $color-secondary;
- padding: 85px 79px 73px 78px;
+  padding: 85px 79px 73px 78px;
   width: calc(48.3vw - 12vw);
   max-width: 500px;
   box-sizing: border-box;
-
 
   @include vp-1199 {
     width: 38vw;
@@ -59,12 +58,12 @@
   margin: 0;
   padding-top: 5px;
   width: 183px;
-  line-height: 78.72px ;
+  line-height: 78.72px;
 
   @include vp-1199 {
     font-size: 48px;
     letter-spacing: 1.44px;
-    line-height: 46.08px ;
+    line-height: 46.08px;
     width: 100%;
   }
 
@@ -99,11 +98,9 @@
   font-family: $ff-RobotoCondensed;
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%;
   padding: 0;
   margin: 0;
   grid-row: 2;
-  justify-self: center;
   display: flex;
   align-items: center;
   justify-self: start;
