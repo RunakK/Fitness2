@@ -6,6 +6,7 @@ import './modules/tabs/index';
 import './modules/accordion/accordions';
 import './modules/accordion/init-accordion';
 import './modules/accordion/index';
+import {runTrainersSlider, runReviewSlider} from './vendor';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -13,6 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  runTrainersSlider();
+  runReviewSlider();
 
   // Modules
   // ---------------------------------
@@ -36,81 +39,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // swiper
-
-  const swiper = new Swiper('.trainers__wrapper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.trainers__button-next',
-      prevEl: '.trainers__button-prev',
-    },
-
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      // when window width is >= 1200px
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
-  });
-
-  const swiperReviews = new Swiper('.swiper-reviews', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 1,
-
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-reviews__next',
-      prevEl: '.swiper-reviews__prev',
-    },
-
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 150,
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 150,
-      },
-      // when window width is >= 1200px
-      1200: {
-        slidesPerView: 1,
-        spaceBetween: 150,
-      },
-    },
-
-  });
-
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

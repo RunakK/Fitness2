@@ -1624,11 +1624,11 @@ button,
   line-height: 1.5;
   margin: 0;
 }
-.about__gym-description p:nth-child(2) {
+.about__gym-description div {
   display: block;
 }
 @media (max-width: 1199px) {
-  .about__gym-description p:nth-child(2) {
+  .about__gym-description div {
     display: none;
   }
 }
@@ -1753,6 +1753,17 @@ button,
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .about__video img {
+    margin: 0 auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100vw;
+    position: relative;
+    height: 167px;
+  }
 }
 
 .accordion {
@@ -2082,9 +2093,9 @@ button,
   opacity: 0.48;
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -40%);
-      -ms-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -49%);
+      -ms-transform: translate(-50%, -49%);
+          transform: translate(-50%, -49%);
 }
 @media (max-width: 767px) {
   .card__price span {
@@ -2092,7 +2103,7 @@ button,
   }
 }
 
-.card__price span:first-child {
+.card__price p {
   color: #103aae;
   position: relative;
   text-align: center;
@@ -2104,7 +2115,7 @@ button,
   width: 100%;
 }
 @media (max-width: 767px) {
-  .card__price span:first-child {
+  .card__price p {
     font-size: 48px;
   }
 }
@@ -2248,7 +2259,7 @@ button,
 }
 
 @media (max-width: 767px) {
-  .contacts__list li:nth-child(3) {
+  .contacts__list--third {
     -ms-grid-row: 2;
     grid-row: 2;
   }
@@ -2263,6 +2274,20 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts__item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.contacts__item div {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .contacts__item div {
     font-size: 20px;
     margin-bottom: 5px;
   }
@@ -4183,15 +4208,19 @@ button,
   padding: 0;
   margin: 0;
 }
+
 @media (max-width: 767px) {
-  .navigation__item:nth-child(1) {
+  .navigation__item--first {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-area: 2/1/3/2;
   }
-  .navigation__item:nth-child(2) {
+}
+
+@media (max-width: 767px) {
+  .navigation__item--second {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
