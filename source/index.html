@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Фитнес центр в Омске">
   <title>Finess2</title>
+  <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.png"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href="" class="header__logo-link">
+          <a href="index.html" class="header__logo-link">
             supergym
           </a>
           <a class="header__phone-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
@@ -57,7 +57,7 @@
             <p>Просторный зал площадью 900 кв/м</p>
             <div class="about__gym-description">
               <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+              <div>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </div>
             </div>
           </div>
           <div class="about__picture">
@@ -65,7 +65,7 @@
               <source type="image/webp" srcset="img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
               <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
-              <source srcset="./img/gym-desktop.png 1x, ./img/gym-desktop@2x.png 2x">
+              <source media="(max-width: 1366px)" srcset="./img/gym-desktop.png 1x, ./img/gym-desktop@2x.png 2x">
               <source media="(max-width: 1199px)" srcset="./img/gym-tablet.png 1x, ./img/gym-tablet@2x.png 2x">
               <source media="(max-width: 767px)" srcset="./img/gym-mobile.png 1x, ./img/gym-mobile@2x.png 2x">
               <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401" alt="просторный светлый зал с тренажёрами">
@@ -76,7 +76,7 @@
               <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
               <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
-              <source srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
+              <source media="(max-width: 1366px)" srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
               <source media="(max-width: 1199px)" srcset="./img/video-tablet.png 1x, ./img/video-tablet@2x.png 2x">
               <source media="(max-width: 767px)" srcset="./img/video-mobile.png 1x, ./img/video-mobile@2x.png 2x">
               <img src="./img/video-desktop.webp" srcset="./img/video-desktop@2x.png 2x" width="364" height="228" alt="зал с тренажёрами">
@@ -100,7 +100,7 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <div class="card__price">
-                    <span>5000 ₽</span>
+                    <p>5000 ₽</p>
                     <span>5000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -109,7 +109,7 @@
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <div class="card__price">
-                    <span>1700 ₽</span>
+                    <p>1700 ₽</p>
                     <span>1700</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -118,7 +118,7 @@
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
                   <div class="card__price">
-                    <span>2700 ₽</span>
+                    <p>2700 ₽</p>
                     <span>2700</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -129,7 +129,7 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <div class="card__price">
-                    <span>25000 ₽</span>
+                    <p>25000 ₽</p>
                     <span>25000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -138,7 +138,7 @@
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <div class="card__price">
-                    <span>8000 ₽</span>
+                    <p>8000 ₽</p>
                     <span>8000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -147,7 +147,7 @@
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
                   <div class="card__price">
-                    <span>12000 ₽</span>
+                    <p>12000 ₽</p>
                     <span>12000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -158,7 +158,7 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <div class="card__price">
-                    <span>40000 ₽</span>
+                    <p>40000 ₽</p>
                     <span>40000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -167,7 +167,7 @@
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <div class="card__price">
-                    <span>30000 ₽</span>
+                    <p>30000 ₽</p>
                     <span>30000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -176,7 +176,7 @@
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
                   <div class="card__price">
-                    <span>20000 ₽</span>
+                    <p>20000 ₽</p>
                     <span>20000</span>
                   </div>
                   <a class="btn btn--dark card__button" href="#">купить абонемент</a>
@@ -436,12 +436,12 @@
               <li class="promo__item">
                 <h3>Месяц бесплатно</h3>
                 <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
-                <a href="#" class="promo__button">подробнее</a>
+                <a class="promo__button" href="#">подробнее</a>
               </li>
               <li class="promo__item">
                 <h3>Скидка 20%</h3>
                 <p>Корпоративный фитнес с&nbsp;командой</p>
-                <a href="#" class="promo__button">подробнее</a>
+                <a class="promo__button" href="#">подробнее</a>
               </li>
             </ul>
 
@@ -705,12 +705,12 @@
                 <h3>Телефон:</h3>
                 <a href="tel:8-800-555-55-55"> 8-800-555-55-55 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__list--third">
                 <h3>График работы:</h3>
                 <p>Пн-Вс: с 8:00 до 22:00</p>
               </li>
               <li class="contacts__item">
-                <h3>Email:</h3>
+                <div>Email:</div>
                 <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
               </li>
             </ul>
@@ -724,17 +724,18 @@
       <div class="container">
         <div class="footer__wrapper">
           <nav class="footer__navigation navigation">
-            <a class="footer__logo-link" href="">supergym</a>
+            <a class="footer__logo-link" href="#">supergym</a>
             <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="#">Услуги</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Абонементы</a></li>
+              <li class="navigation__item navigation__item--first"><a class="navigation__link" href="#">Услуги</a></li>
+              <li class="navigation__item navigation__item--second"><a class="navigation__link" href="#">Абонементы</a></li>
               <li class="navigation__item"><a class="navigation__link" href="#">Акции</a></li>
               <li class="navigation__item"><a class="navigation__link" href="#">Тренеры</a></li>
               <li class="navigation__item"><a class="navigation__link" href="#">Расписание</a></li>
             </ul>
           </nav>
           <ul class="footer__social social">
-            <li class="social__card"><a class="social__link" href="">
+            <li class="social__card">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">мы вконтакте</span>
                 <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#vk"></use>
@@ -742,14 +743,15 @@
               </a>
             </li>
             <li class="social__card">
-              <a class="social__link" href="">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">мы в одноклассниках</span>
                 <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__card"><a class="social__link" href="">
+            <li class="social__card">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">мы на реддит</span>
                 <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use href="./img/sprite.svg#Reddit"></use>
