@@ -1649,6 +1649,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #003eb7;
 }
 @media (max-width: 1199px) {
   .about__picture img {
@@ -2059,10 +2060,16 @@ button,
   line-height: 150%;
   margin-bottom: 100px;
   text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 1199px) {
+  .card p {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 767px) {
   .card p {
-    margin-bottom: 82px;
+    margin-bottom: 41px;
   }
 }
 
@@ -2093,13 +2100,23 @@ button,
   opacity: 0.48;
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -49%);
-      -ms-transform: translate(-50%, -49%);
-          transform: translate(-50%, -49%);
+  -webkit-transform: translate(-50%, -21%);
+      -ms-transform: translate(-50%, -21%);
+          transform: translate(-50%, -21%);
+}
+@media (max-width: 1199px) {
+  .card__price span {
+    -webkit-transform: translate(0, -23%);
+        -ms-transform: translate(0, -23%);
+            transform: translate(0, -23%);
+  }
 }
 @media (max-width: 767px) {
   .card__price span {
     font-size: 80px;
+    -webkit-transform: translate(-50%, -26%);
+        -ms-transform: translate(-50%, -26%);
+            transform: translate(-50%, -26%);
   }
 }
 
@@ -2113,10 +2130,23 @@ button,
   opacity: 1;
   z-index: 2;
   width: 100%;
+  -webkit-transform: translate(0, 20px);
+      -ms-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+}
+@media (max-width: 1199px) {
+  .card__price p {
+    -webkit-transform: translate(0, 14px);
+        -ms-transform: translate(0, 14px);
+            transform: translate(0, 14px);
+  }
 }
 @media (max-width: 767px) {
   .card__price p {
     font-size: 48px;
+    -webkit-transform: translate(0, 10px);
+        -ms-transform: translate(0, 10px);
+            transform: translate(0, 10px);
   }
 }
 
@@ -2721,6 +2751,7 @@ button,
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .event-text h3 {
@@ -2763,6 +2794,15 @@ button,
   -ms-grid-column-align: start;
       justify-self: start;
   line-height: 21px;
+  position: relative;
+}
+.event-text__date p::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 1px;
+  background: #ffffff;
+  top: 0;
 }
 @media (max-width: 1199px) {
   .event-text__date p {
@@ -2777,6 +2817,7 @@ button,
   grid-column: 1/-1;
   -ms-grid-column-align: start;
       justify-self: start;
+  position: relative;
 }
 
 .event-text__date span {
@@ -2814,6 +2855,15 @@ button,
   font-size: 40px;
   font-weight: 700;
   line-height: 150%;
+  position: relative;
+}
+.event-text__time span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  top: 0;
 }
 @media (max-width: 1199px) {
   .event-text__time span {
@@ -2832,15 +2882,14 @@ button,
 @media (max-width: 1199px) {
   .event-text__button {
     border: 2px solid;
-    padding: 16px;
+    padding: 7px;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    height: 39px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2848,7 +2897,11 @@ button,
 }
 @media (max-width: 767px) {
   .event-text__button {
-    padding: 13px;
+    padding: 5px;
+    max-width: 100%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 @media (max-width: 767px) and (hover: hover) {
@@ -2901,6 +2954,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #003eb7;
 }
 @media (max-width: 767px) {
   .event__wrapper img {
@@ -4368,6 +4422,7 @@ button,
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  background-color: #00359f;
 }
 
 .promo__description {
