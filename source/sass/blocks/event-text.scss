@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  column-gap: 4.3vw;
+  column-gap: 20.3%;
   background-color: $background-banners;
   color: $color-secondary;
   padding: 85px 79px 73px 78px;
@@ -69,6 +69,7 @@
 
   @include vp-767 {
     padding-left: 2vw;
+    text-align: left;
   }
 }
 
