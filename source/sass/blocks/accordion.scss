@@ -138,6 +138,20 @@
 }
 
 .accordion__element.is-active .accordion__button {
+  &:active {
+    &::before {
+      border: 1px solid #1c3374;
+      background-color: #1c3374;
+    }
+
+    &::after {
+      background: linear-gradient($color-secondary, $color-secondary);
+      background-position: center;
+      background-size: 50% 2px, 2px 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
   &::before {
     border: 1px solid #1c3374;
     background-color: #1c3374;
