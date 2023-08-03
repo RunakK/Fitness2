@@ -72,6 +72,7 @@
   outline-offset: -1px;
   border: none;
   text-transform: capitalize;
+  cursor: pointer;
 
   @include hover-focus {
     color: $color-secondary;

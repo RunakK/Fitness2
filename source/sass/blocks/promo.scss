@@ -66,6 +66,7 @@
   object-fit: cover;
   width: 100%;
   background-color: #00359f;
+  height: 100%;
 }
 
 .promo__description {
@@ -117,6 +118,17 @@
 .promo__description .promo__button {
   display: block;
   margin-top: auto;
+  position: relative;
+  width: min-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $color-secondary;
+    bottom: -2px;
+  }
 
   @include vp-767 {
     line-height: 150%;
@@ -130,6 +142,7 @@
   list-style: none;
   display: grid;
   gap: 40px;
+  align-self: start;
 
   @include vp-1199 {
     gap: 30px;
@@ -151,6 +164,7 @@
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
+  min-height: 211px;
 
   @include vp-1199 {
     min-height: 211px;
@@ -184,6 +198,17 @@
 
 .promo__item .promo__button {
   margin-top: auto;
+  position: relative;
+  width: min-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $color-primary;
+    bottom: -4px;
+  }
 }
 
 .promo__button {
@@ -193,11 +218,42 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  text-decoration: underline;
+  min-width: min-content;
+  max-width: 100%;
+
+  @include hover {
+    opacity: 0.8;
+    &::before {
+      opacity: 0,8;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-primary;
+    outline-offset: 10px;
+  }
+
+  &:active {
+    color: $color-primary;
+    &::before {
+      color: $color-primary;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+
 }
 
 .promo__button--secondary {
   color: $color-secondary;
+  font-size: 14px;
+  position: relative;
 
   @include vp-1199 {
     color: $color-secondary;
@@ -210,13 +266,26 @@
 
   @include hover {
     opacity: 0.8;
+    &::before {
+      opacity: 0,8;
+    }
   }
 
   @include focus {
     outline: 1px solid $color-secondary;
   }
 
+  &:active {
+    color: $color-secondary;
+    &::before {
+      color: $color-secondary;
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
+    &::before {
+      opacity: 0.5;
+    }
   }
 }

@@ -40,6 +40,10 @@
   }
 }
 
+.form__contacts label {
+  position: relative;
+}
+
 .form h2 {
   margin: 0;
 
@@ -99,9 +103,24 @@
   }
 }
 
+div[data-on-input-validate] {
+  position: relative;
+}
+
+div[data-limitation="name"] {
+  position: relative;
+}
+
 .form__input-error.is-invalid {
   border-bottom: $color-error;
   color: $color-error;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.form__contacts.is-invalid {
+  position: relative;
 }
 
 .form__input-error.is-valid {
