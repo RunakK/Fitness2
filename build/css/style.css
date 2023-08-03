@@ -1921,11 +1921,11 @@ button,
   background-size: 50% 2px, 2px 50%;
   background-repeat: no-repeat;
 }
-.accordion__button.focus-visible:active::before {
+.accordion__button:active::before {
   border: 1px solid #1c3374;
   background-color: #1c3374;
 }
-.accordion__button.focus-visible:active::after {
+.accordion__button:active::after {
   background: -webkit-gradient(linear, left top, left bottom, from(#ed0233), to(#ed0233)), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
   background: linear-gradient(#ed0233, #ed0233), linear-gradient(#ffffff, #ffffff);
   background-position: center;
