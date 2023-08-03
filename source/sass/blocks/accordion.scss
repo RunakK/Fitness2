@@ -64,6 +64,7 @@
   border: none;
   background-color: transparent;
   width: 42px;
+  height: 42px;
 
   &::before {
     content: "";
@@ -122,6 +123,7 @@
 
   @include vp-767 {
     width: 10px;
+    height: 10px;
 
     &::before {
       width: 32px;
