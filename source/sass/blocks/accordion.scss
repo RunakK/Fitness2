@@ -138,6 +138,20 @@
 }
 
 .accordion__element.is-active .accordion__button {
+  @include hover-focus {
+    &::before {
+      border: 1px solid #1c3374;
+      background-color: #1c3374;
+    }
+
+    &::after {
+      background: linear-gradient($color-secondary, $color-secondary), linear-gradient($color-secondary, $color-secondary);
+      background-position: center;
+      background-size: 50% 2px;
+      background-repeat: no-repeat;
+    }
+  }
+
   &:active {
     &::before {
       border: 1px solid #1c3374;
