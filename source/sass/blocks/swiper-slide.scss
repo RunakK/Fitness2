@@ -63,16 +63,15 @@
   visibility: visible;
   order: 1;
   margin-top: -15px;
-  margin-left: 15px;
+  margin-left: -22px;
   text-align: center;
-  // order: -1;
-  margin: auto;
+  // margin: auto;
   margin-top: 24px;
   position: absolute;
   bottom: 22px;
 
   @include vp-1199 {
-    margin-bottom: -10px;
+    margin-bottom: 0;
   }
 
   @include vp-767 {

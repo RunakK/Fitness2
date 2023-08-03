@@ -1,28 +1,16 @@
 .event__wrapper {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 106px;
   position: relative;
+  padding-top: 119px;
+  padding-bottom: 107px;
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 88px;
+    padding-bottom: 89px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    padding-top: 72px;
-    padding-bottom: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      width: calc(100% + 4px);
-      left: -2px;
-      height: 13.6vw;
-      background-color: $color-secondary;
-    }
   }
 }
 
@@ -31,16 +19,13 @@
   height: 100%;
   object-fit: cover;
   background-color: #003eb7;
-
   min-height: 500px;
   object-fit: cover;
-  height: 100%;
 
   @include vp-1199 {
     min-height: 292px;
   }
 
   @include vp-767 {
-    width: 100%;
   }
 }
