@@ -24,7 +24,7 @@
       <div class="container">
         <div class="header__wrapper">
           <a href="index.html" class="header__logo-link">
-            supergym
+            <img src="./img/supergym.svg" width="122" height="44" alt="мужчина в тёмной футолке с надписью супермен">
           </a>
           <a class="header__phone-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
         </div>
@@ -35,8 +35,13 @@
         <div class="container">
           <div class="hero__wrapper">
             <p>омск</p>
-            <h1>ФИТНЕС<br>ЦЕНТР</h1>
-            <span>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </span>
+            <h1>Фитнес<br>центр</h1>
+            <!-- <span>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </span> -->
+            <ul class="hero__list">
+              <li class="hero__list-item">Тренажёрный зал</li>
+              <li class="hero__list-item">Групповые занятия</li>
+              <li class="hero__list-item">Кардио-зона</li>
+            </ul>
             <a class="btn hero__button" href="#buy-abonnements">Купить абонемент</a>
             <div class="hero__img">
               <picture>
@@ -56,8 +61,8 @@
             <h2>Тренажерный зал</h2>
             <p>Просторный зал площадью 900 кв/м</p>
             <div class="about__gym-description">
-              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <div>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </div>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <div>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;<nobr>кардио-зона</nobr> с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </div>
             </div>
           </div>
           <div class="about__picture">
@@ -70,18 +75,18 @@
               <source media="(max-width: 767px)" srcset="./img/gym-mobile.png 1x, ./img/gym-mobile@2x.png 2x">
               <img src="./img/gym-desktop.png" srcset="./img/gym-desktop@2x.png 2x" width="660" height="401" alt="просторный светлый зал с тренажёрами">
             </picture>
-          </div>
-          <div class="about__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
-            <picture>
-              <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
-              <source media="(max-width: 1366px)" srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="./img/video-tablet.png 1x, ./img/video-tablet@2x.png 2x">
-              <source media="(max-width: 767px)" srcset="./img/video-mobile.png 1x, ./img/video-mobile@2x.png 2x">
-              <img src="./img/video-desktop.webp" srcset="./img/video-desktop@2x.png 2x" width="364" height="228" alt="зал с тренажёрами">
-            </picture>
-            <button class="about__button"></button>
+            <div class="about__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+              <picture>
+                <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
+                <source media="(max-width: 1366px)" srcset="./img/video-desktop.png 1x, ./img/video-desktop@2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="./img/video-tablet.png 1x, ./img/video-tablet@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="./img/video-mobile.png 1x, ./img/video-mobile@2x.png 2x">
+                <img src="./img/video-desktop.webp" srcset="./img/video-desktop@2x.png 2x" width="364" height="228" alt="зал с тренажёрами">
+              </picture>
+              <button class="about__button"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -194,10 +199,13 @@
               <p>SUPER<br>GAMES</p>
               <div class="event-text__date">
                 <h3>Дата</h3>
-                <p>
+                <div class="event-text__date-wrapper">
                   <span>7</span>
-                  Марта<br>2019
-                </p>
+                  <div class="event-text__month">
+                    <p>Марта</p>
+                    <p>2019</p>
+                  </div>
+                </div>
               </div>
               <div class="event-text__time">
                 <h3>Время</h3> <span>12:00</span>
@@ -216,6 +224,7 @@
           </div>
         </div>
       </section>
+
       <section class="trainers">
         <!-- Slider main container -->
         <div class="container">
@@ -234,7 +243,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit </li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -249,7 +258,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -264,7 +273,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -279,7 +288,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -294,7 +303,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -309,7 +318,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -324,7 +333,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -339,7 +348,7 @@
                   <span>CrossFit</span>
                   <ul class="trainers__achievements-list">
                     <li class="trainers__achievements-item">Certified Level 5 Trainer</li>
-                    <li class="trainers__achievements-item">Победитель чемпионата Вселенной по CrossFit </li>
+                    <li class="trainers__achievements-item">Победитель чемпионата России по CrossFit</li>
                     <li class="trainers__achievements-item">Опыт — 20 лет</li>
                   </ul>
                 </div>
@@ -354,7 +363,7 @@
         <div class="container container--features">
           <h2>Наши преимущества</h2>
           <ul class="features__list">
-            <li class="features__item features-item features-item--line">
+            <li class="features__item features-item features-item--line features-item--gap">
               <div class="features-item__text">
                 <h3>Площадь </h3>
                 <p>Занимайтесь без очередей<br>и толкучки</p>
@@ -379,7 +388,7 @@
               <p>Тренажеров</p>
               <span>Современные тренажеры<br>на все группы мышц</span>
             </li>
-            <li class="features__item features-item features-item--bottom">
+            <li class="features__item features-item features-item--bottom features-item--gap">
               <div class="features-item__text">
                 <h3>Комфорт</h3>
                 <p>Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</p>
@@ -457,7 +466,7 @@
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
-                      <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                      <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
                     </div>
                   </div>
                 </div>
@@ -495,7 +504,7 @@
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
-                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                     </div>
                   </div>
                 </div>
@@ -533,7 +542,7 @@
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
-                      <p>Да. Вы можете обратиться как к&nbsp;своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
+                      <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                     </div>
                   </div>
                 </div>
@@ -571,7 +580,7 @@
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
-                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках <nobr>и т. п.</nobr>, исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
@@ -594,7 +603,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
+                  <p>Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?</p>
                   <button class="accordion__button" type="button" data-accordion="button"></button>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -620,7 +629,7 @@
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
               <div class="swiper-slide swiper-reviews__slide">
                 <div class="swiper-reviews__image">
@@ -630,7 +639,7 @@
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
               <div class="swiper-slide swiper-reviews__slide">
                 <div class="swiper-reviews__image">
@@ -640,7 +649,7 @@
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
             </div>
             <div class="swiper-button-prev swiper-reviews__prev"></div>
