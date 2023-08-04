@@ -4536,6 +4536,8 @@ div[data-limitation=name] {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.3px;
+    padding-left: 0;
+    padding-top: 0;
   }
 
   .event-text__time p::before {
@@ -5204,6 +5206,11 @@ div[data-limitation=name] {
 
   .event-text__time {
     margin-top: -1px;
+  }
+
+  .event-text__time p {
+    padding-left: 0;
+    padding-top: 0;
   }
 
   .event-text__button {
