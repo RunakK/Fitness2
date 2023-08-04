@@ -9,9 +9,11 @@
   &:hover {
     @include hover-focus {
       & h3 {
+        top: 0;
         margin: 0;
         order: -1;
         position: relative;
+        bottom: -4px;
       }
 
       & .trainers__info {
@@ -25,10 +27,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 296px;
+  // min-height: 296px;
+  min-height: 100%;
+
 
   @include vp-1199 {
     width: 268px;
+    min-width: 260px;
+    height: auto;
   }
 }
 
@@ -50,7 +56,8 @@
   text-overflow: clip;
 
   @include vp-767 {
-    padding: 48px 33px;
+    padding: 48px 7px;
+    padding-top: 37px;
   }
 }
 
@@ -59,24 +66,25 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  margin: 0;
+  margin: 0 auto;
   visibility: visible;
   order: 1;
   margin-top: -15px;
-  margin-left: 15px;
+  margin-left: -22px;
   text-align: center;
-  // order: -1;
-  margin: auto;
   margin-top: 24px;
   position: absolute;
-  bottom: 22px;
+  top: min(16.5vw,230px);
 
   @include vp-1199 {
-    margin-bottom: -10px;
+    margin-bottom: 0;
+    top: min(28.5vw,230px);
   }
 
   @include vp-767 {
-    margin-bottom: -18px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    top: min(68.5vw,230px);
   }
 }
 
@@ -99,4 +107,8 @@
   flex-direction: column;
   padding-left: 25px;
   gap: 13px;
+
+  @include vp-767 {
+    padding-left: 44px;
+  }
 }
