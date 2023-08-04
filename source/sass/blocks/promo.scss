@@ -82,7 +82,7 @@
 
   @include vp-767 {
     text-align: center;
-    padding-bottom: 42px;
+    padding-bottom: 43px;
   }
 }
 
@@ -111,7 +111,7 @@
 
   @include vp-767 {
     margin-top: -8px;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 }
 
@@ -132,7 +132,9 @@
 
   @include vp-767 {
     line-height: 150%;
-    letter-spacing: 1.9px;
+    letter-spacing: 0.7px;
+    align-self: center;
+    bottom: 2px;
   }
 }
 
@@ -209,6 +211,12 @@
     background-color: $color-primary;
     bottom: -4px;
   }
+
+  @include vp-767 {
+    &::before {
+      bottom: -2px;
+    }
+  }
 }
 
 .promo__button {
@@ -247,6 +255,9 @@
     }
   }
 
+  @include vp-767 {
+    align-self: center;
+  }
 
 }
 

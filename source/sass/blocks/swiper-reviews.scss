@@ -72,6 +72,7 @@
 
   @include vp-767 {
     width: 68px;
+    margin-left: 0;
   }
 }
 
@@ -90,10 +91,13 @@
   margin-top: -6px;
   margin-bottom: 10px;
 
-
   @include vp-1199 {
     line-height: 130%;
     margin: -14px 0 15px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 8px;
   }
 }
 
@@ -152,9 +156,10 @@
   }
 
   @include vp-767 {
-    right: -3px;
     width: 40px;
     height: 40px;
+    right: -11px;
+    top: 5px;
 
     &::after {
       width: 16px;
@@ -192,9 +197,10 @@
   }
 
   @include vp-767 {
-    left: -3px;
     width: 40px;
     height: 40px;
+    left: -11px;
+    top: 5px;
 
     &::after {
       width: 16px;
