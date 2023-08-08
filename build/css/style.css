@@ -1713,7 +1713,7 @@ button,
   width: 73px;
   height: 73px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #003eb7 0%, #ed0233 100%);
+  background: linear-gradient(45deg, #003E91 20%, #ED023C 75%);
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1726,9 +1726,9 @@ button,
   width: 15px;
   height: 15px;
   border: 8px solid transparent;
-  border-left: 15px solid #ffffff;
+  border-left: 12px solid #ffffff;
   top: 50%;
-  left: 52%;
+  left: 50%;
   -webkit-transform: translate(-25%, -50%);
       -ms-transform: translate(-25%, -50%);
           transform: translate(-25%, -50%);
@@ -1742,7 +1742,7 @@ button,
     background: #ffffff;
   }
   .about__button:hover:not(.focus-visible)::after {
-    border-left: 15px solid #102654;
+    border-left: 12px solid #102654;
   }
 }
 .about__button.focus-visible:focus {
@@ -1753,7 +1753,7 @@ button,
   background: #ffffff;
 }
 .about__button.focus-visible:focus::after {
-  border-left: 15px solid #102654;
+  border-left: 12px solid #102654;
 }
 .about__button:active::before {
   width: 63px;
@@ -1768,7 +1768,7 @@ button,
   background: transparent;
 }
 .about__button:disabled::after {
-  border-left: 15px solid #102654;
+  border-left: 12px solid #102654;
 }
 @media (max-width: 1199px) {
   .about__button {
@@ -2116,11 +2116,25 @@ button,
        border-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7)) 2/7px;
        border-image: linear-gradient(90deg, #ed0233 0%, #003eb7 100%) 2/7px;
   }
+  .card:hover:not(.focus-visible) .btn--dark {
+    outline: none;
+    color: #102654;
+    background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+    background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
+  }
 }
 .card.focus-visible:focus {
   -o-border-image: linear-gradient(90deg, #ed0233 0%, #003eb7 100%) 2/7px;
      border-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7)) 2/7px;
      border-image: linear-gradient(90deg, #ed0233 0%, #003eb7 100%) 2/7px;
+}
+.card.focus-visible:focus .btn--dark {
+  outline: none;
+  color: #102654;
+  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .card {
@@ -2250,15 +2264,19 @@ button,
 }
 @media (hover: hover) {
   .card__button.btn--dark:hover:not(.focus-visible) {
-    outline: 1px solid #102654;
-    background: transparent;
+    outline: none;
     color: #102654;
+    background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+    background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
   }
 }
 .card__button.btn--dark.focus-visible:focus {
-  outline: 1px solid #102654;
-  background: transparent;
+  outline: none;
   color: #102654;
+  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
 }
 .card__button.btn--dark:active {
   outline: none;
@@ -4838,6 +4856,7 @@ div[data-limitation=name] {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  padding-top: 10px;
 }
 .promo__item .promo__button::before {
   content: "";
