@@ -4365,6 +4365,10 @@ div[data-limitation=name] {
     margin-bottom: 33px;
   }
 
+  .about__gym-description p {
+    margin-bottom: 0;
+  }
+
   .about__gym-description div {
     display: none;
   }
@@ -4571,6 +4575,11 @@ div[data-limitation=name] {
 
   .event-text__date-wrapper::before {
     width: 100%;
+  }
+
+  .event-text__month p {
+    padding: 0;
+    letter-spacing: 0.3px;
   }
 
   .event__wrapper {
@@ -5067,6 +5076,10 @@ div[data-limitation=name] {
 
   .about__gym-description {
     padding-right: 22px;
+  }
+
+  .about__gym-description p {
+    margin-bottom: 0;
   }
 
   .about__picture {
