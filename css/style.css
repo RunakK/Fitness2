@@ -4945,6 +4945,10 @@ div[data-limitation=name] {
     height: 38.5vw;
   }
 
+  .trainers__info {
+    width: 34vw;
+  }
+
   .trainers__info h3 {
     margin-bottom: 0;
     top: 28.5vw;
@@ -5720,6 +5724,7 @@ div[data-limitation=name] {
   .trainers__info {
     padding: 48px 7px;
     padding-top: 37px;
+    width: 74vw;
   }
 
   .trainers__info h3 {
