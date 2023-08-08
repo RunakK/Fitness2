@@ -1618,23 +1618,35 @@ button,
       flex-wrap: wrap;
   gap: 7px;
 }
+@media (max-width: 767px) {
+  .about__gym-description {
+    padding-right: 22px;
+  }
+}
+
 .about__gym-description p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
 }
+@media (max-width: 1199px) {
+  .about__gym-description p {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about__gym-description p {
+    margin-bottom: 0;
+  }
+}
+
 .about__gym-description div {
   display: block;
 }
 @media (max-width: 1199px) {
   .about__gym-description div {
     display: none;
-  }
-}
-@media (max-width: 767px) {
-  .about__gym-description {
-    padding-right: 22px;
   }
 }
 
@@ -3088,6 +3100,13 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media (max-width: 1199px) {
+  .event-text__month p {
+    padding: 0;
+    letter-spacing: 0.3px;
+  }
 }
 
 .event__wrapper {
