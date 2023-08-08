@@ -5457,10 +5457,16 @@ div[data-limitation=name] {
   overflow: auto;
   text-overflow: clip;
 }
+@media (max-width: 1199px) {
+  .trainers__info {
+    width: 34vw;
+  }
+}
 @media (max-width: 767px) {
   .trainers__info {
     padding: 48px 7px;
     padding-top: 37px;
+    width: 74vw;
   }
 }
 
