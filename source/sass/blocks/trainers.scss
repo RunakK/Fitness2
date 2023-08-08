@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     padding-top: 19px;
   }
 }
@@ -21,7 +21,9 @@
 
   @include vp-767 {
     width: calc(100% - 64px);
-    max-width: 226px;
+    // max-width: 226px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -64,12 +66,14 @@
   @include vp-1199 {
     width: 56px;
     height: 56px;
+    left: 4%;
+    bottom: 31%;
   }
 
   @include vp-767 {
     width: 40px;
     height: 40px;
-    bottom: 33%;
+    bottom: 36%;
 
     &::after {
       width: 16px;
@@ -132,12 +136,14 @@
   @include vp-1199 {
     width: 56px;
     height: 56px;
+    right: 4%;
+    bottom: 31%;
   }
 
   @include vp-767 {
     width: 40px;
     height: 40px;
-    bottom: 33%;
+    bottom: 36%;
 
     &::after {
       width: 16px;
@@ -149,4 +155,17 @@
   }
 }
 
+.trainers__slide--tablet-first {
+  @include vp-1199 {
+    order: -2;
+  }
+}
 
+.trainers__slide--tablet-second {
+  @include vp-1199 {
+    order: -1;
+  }
+  @include vp-767 {
+    order: -3;
+  }
+}
