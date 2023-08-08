@@ -272,3 +272,10 @@
   grid-column: 2;
   width: fit-content;
 }
+
+.event-text__month p {
+  @include vp-1199 {
+    padding: 0;
+    letter-spacing: 0.3px;
+  }
+}
