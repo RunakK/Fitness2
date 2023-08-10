@@ -1707,8 +1707,8 @@ button,
   height: 96px;
   border: none;
   border-radius: 50%;
-  -webkit-box-shadow: -2px 2px 0 2px rgba(237, 2, 51, 0.5), 0 0 0 4px rgba(0, 62, 183, 0.5);
-          box-shadow: -2px 2px 0 2px rgba(237, 2, 51, 0.5), 0 0 0 4px rgba(0, 62, 183, 0.5);
+  -webkit-box-shadow: -2px 0px 0 0px rgba(237, 2, 51, 0.3), 0 0 0 2px rgba(0, 62, 183, 0.3);
+          box-shadow: -2px 0px 0 0px rgba(237, 2, 51, 0.3), 0 0 0 2px rgba(0, 62, 183, 0.3);
   background: transparent;
   position: absolute;
   bottom: 50%;
@@ -1724,9 +1724,9 @@ button,
   width: 73px;
   height: 73px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #003E91 20%, #ED023C 75%);
-  left: 50%;
-  top: 50%;
+  background: linear-gradient(45deg, #003E91 20%, #b80027 75%);
+  left: 49.4%;
+  top: 51.3%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1746,8 +1746,8 @@ button,
 }
 @media (hover: hover) {
   .about__button:hover:not(.focus-visible) {
-    -webkit-box-shadow: -2px 2px 0 2px #102654, 0 0 0 4px #102654;
-            box-shadow: -2px 2px 0 2px #102654, 0 0 0 4px #102654;
+    -webkit-box-shadow: -2px 0 0 0 #102654, 0 0 0 2px #102654;
+            box-shadow: -2px 0 0 0 #102654, 0 0 0 2px #102654;
   }
   .about__button:hover:not(.focus-visible)::before {
     background: #ffffff;
@@ -1757,8 +1757,8 @@ button,
   }
 }
 .about__button.focus-visible:focus {
-  -webkit-box-shadow: -2px 2px 0 2px #102654, 0 0 0 4px #102654;
-          box-shadow: -2px 2px 0 2px #102654, 0 0 0 4px #102654;
+  -webkit-box-shadow: -2px 0 0 0 #102654, 0 0 0 2px #102654;
+          box-shadow: -2px 0 0 0 #102654, 0 0 0 2px #102654;
 }
 .about__button.focus-visible:focus::before {
   background: #ffffff;
@@ -1772,8 +1772,8 @@ button,
 }
 .about__button:disabled {
   opacity: 0.5;
-  -webkit-box-shadow: -2px 2px 0 2px #102654, 0 0 0 4px #102654;
-          box-shadow: -2px 2px 0 2px #102654, 0 0 0 4px #102654;
+  -webkit-box-shadow: -2px 0 0 0 #102654, 0 0 0 2px #102654;
+          box-shadow: -2px 0 0 0 #102654, 0 0 0 2px #102654;
 }
 .about__button:disabled::before {
   background: transparent;
@@ -1783,19 +1783,21 @@ button,
 }
 @media (max-width: 1199px) {
   .about__button {
-    width: 73px;
-    height: 73px;
+    width: 69px;
+    height: 69px;
   }
   .about__button::after {
     width: 6px;
     height: 6px;
     border: 6px solid transparent;
     border-left: 9px solid #fff;
-    left: 50%;
+    left: 49%;
+    top: 49%;
   }
   .about__button::before {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
+    top: 49.3%;
   }
 }
 @media (max-width: 767px) {
@@ -1896,6 +1898,7 @@ button,
   background-color: transparent;
   width: 42px;
   height: 32px;
+  cursor: pointer;
 }
 .accordion__button::before {
   content: "";
@@ -1928,6 +1931,9 @@ button,
           transform: translate(0, -50%);
 }
 @media (hover: hover) {
+  .accordion__button:hover:not(.focus-visible) {
+    outline: transparent;
+  }
   .accordion__button:hover:not(.focus-visible)::before {
     border: 1px solid #1c3374;
     background-color: #1c3374;
@@ -1939,6 +1945,9 @@ button,
     background-size: 50% 2px, 2px 50%;
     background-repeat: no-repeat;
   }
+}
+.accordion__button.focus-visible:focus {
+  outline: transparent;
 }
 .accordion__button.focus-visible:focus::before {
   border: 1px solid #1c3374;
@@ -2040,6 +2049,10 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: transparent;
   border: 4px solid #ffffff;
   cursor: pointer;
@@ -4766,6 +4779,10 @@ div[data-limitation=name] {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .promo__description .promo__button::before {
   content: "";
@@ -4894,6 +4911,10 @@ div[data-limitation=name] {
   min-width: -moz-min-content;
   min-width: min-content;
   max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (hover: hover) {
   .promo__button:hover:not(.focus-visible) {
@@ -5379,7 +5400,6 @@ div[data-limitation=name] {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 294px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5650,6 +5670,10 @@ div[data-limitation=name] {
   padding: 0;
   background-color: transparent;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 @media (hover: hover) {

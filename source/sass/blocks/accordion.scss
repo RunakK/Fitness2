@@ -65,6 +65,7 @@
   background-color: transparent;
   width: 42px;
   height: 32px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -94,6 +95,7 @@
   }
 
   @include hover-focus {
+    outline: transparent;
     &::before {
       border: 1px solid #1c3374;
       background-color: #1c3374;
