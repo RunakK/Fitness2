@@ -190,7 +190,8 @@
   height: 96px;
   border: none;
   border-radius: 50%;
-  box-shadow: -2px 2px 0 2px rgba(237, 2, 51, 0.5), 0 0 0 4px rgba(0, 62, 183, 0.5);
+  // box-shadow: -1px 1px 0 1px rgba(237, 2, 51, 0.5), 0 0 0 1px rgba(0, 62, 183, 0.5);
+  box-shadow: -2px 0px 0 0px rgba(237,2,51,.3), 0 0 0 2px rgba(0,62,183,.3);
   background: transparent;
   position: absolute;
   bottom: 50%;
@@ -205,9 +206,9 @@
     height: 73px;
     border-radius: 50%;
     // background: linear-gradient(45deg, #003eb7 0%, #ed0233 100%);
-    background: linear-gradient(45deg,#003E91 20%,#ED023C 75%);
-    left: 50%;
-    top: 50%;
+    background: linear-gradient(45deg,#003E91 20%,#b80027 75%);
+    left: 49.4%;
+    top: 51.3%;
     transform: translate(-50%, -50%);
   }
 
@@ -224,7 +225,7 @@
   }
 
   @include hover-focus {
-    box-shadow: -2px 2px 0 2px $color-primary, 0 0 0 4px $color-primary;
+    box-shadow: -2px 0 0 0 $color-primary, 0 0 0 2px $color-primary;
 
     &::before {
       background: $color-secondary;
@@ -245,7 +246,7 @@
   &:disabled {
     opacity: 0.5;
 
-    box-shadow: -2px 2px 0 2px $color-primary, 0 0 0 4px $color-primary;
+    box-shadow: -2px 0 0 0 $color-primary, 0 0 0 2px $color-primary;
 
     &::before {
       background: transparent;
@@ -257,21 +258,22 @@
   }
 
   @include vp-1199 {
-    width: 73px;
-    height: 73px;
+    width: 69px;
+    height: 69px;
 
     &::after {
       width: 6px;
     height: 6px;
     border: 6px solid transparent;
     border-left: 9px solid #fff;
-    left: 50%;
-
+    left: 49%;
+    top: 49%;
     }
 
     &::before {
-      width: 50px;
-      height: 50px;
+      width: 52px;
+      height: 52px;
+      top: 49.3%;
     }
   }
 

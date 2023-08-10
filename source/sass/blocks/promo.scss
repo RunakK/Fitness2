@@ -120,6 +120,7 @@
   margin-top: auto;
   position: relative;
   width: min-content;
+  user-select: none;
 
   &::before {
     content: "";
@@ -229,6 +230,7 @@
   text-transform: uppercase;
   min-width: min-content;
   max-width: 100%;
+  user-select: none;
 
   @include hover {
     opacity: 0.8;

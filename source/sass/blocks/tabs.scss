@@ -61,6 +61,7 @@
   padding: 0;
   background-color: transparent;
   position: relative;
+  user-select: none;
   cursor: pointer;
 
   @include hover-focus {
